@@ -1,0 +1,1796 @@
+<?xml version="1.0"?>
+<MercuryGate specVersion="3.23">
+<Header><SenderID/>
+<ReceiverID/>
+<DocTypeID>FreightBill</DocTypeID>
+<DocCount>1</DocCount>
+<Date type="generation">02/25/2021 16:48</Date>
+<ExtractRequest><Date>02/25/2021 16:48</Date>
+<Reason>Manual Extract From FreightBill List Screen</Reason>
+<User UserId="natalie.ennis@mercurygate.com" FirstName="Natalie" LastName="Ennis" internalId="24950630414"><ContactMethods><ContactMethod sequenceNum="1" type="Phone"></ContactMethod>
+<ContactMethod sequenceNum="2" type="Email">natalie.ennis@mercurygate.com</ContactMethod>
+<ContactMethod sequenceNum="3" type="SMSEmail"></ContactMethod>
+<ContactMethod sequenceNum="4" type="Fax"></ContactMethod>
+</ContactMethods>
+</User>
+</ExtractRequest>
+</Header>
+<MasterBillOfLading internalId="27145133643" type="CustomerLoad" createBy="Ray.Deluca" createDate="09/13/2019 15:06" updateBy="Ray.Deluca" updateDate="09/13/2019 15:23"><ReferenceNumbers><ReferenceNumber type="Shipping Order" isPrimary="true" internalId="27145133651">SO48</ReferenceNumber>
+<ReferenceNumber type="Shipment ID" isPrimary="false" internalId="27145133903">SN51</ReferenceNumber>
+<ReferenceNumber type="Customer Acct Number" isPrimary="false" internalId="25625093355">CarSand</ReferenceNumber>
+</ReferenceNumbers>
+<RelatedExecutionLoads><MasterBillOfLading internalId="27145133627"/>
+</RelatedExecutionLoads>
+<Comments/>
+<Services/>
+<RelatedItems><Packages><Package type="" internalId="27145133616"><Dimensions><Dimension type="" dim="Width" uom=" ">0.0</Dimension>
+<Dimension type="" dim="Length" uom=" ">0.0</Dimension>
+<Dimension type="" dim="Height" uom=" ">0.0</Dimension>
+</Dimensions>
+<Weights><Weight type="actual" uom="lb">3500.0</Weight>
+<Weight type="planned" uom="lb">3500.0</Weight>
+<Weight type="ordered" uom="lb">3500.0</Weight>
+<Weight type="delivered" uom="lb">0.0</Weight>
+</Weights>
+<ItemGroups><ItemGroup internalId="27145133616" isShipUnit="false" isHandlingUnit="true" sequence=""><Description>Freight All Kind</Description>
+<ContainmentId>0</ContainmentId>
+<Weights><Weight type="actual" uom="lb">3500.0</Weight>
+<Weight type="planned" uom="lb">3500.0</Weight>
+<Weight type="ordered" uom="lb">3500.0</Weight>
+<Weight type="delivered" uom="lb">0.0</Weight>
+</Weights>
+<Quantities><Quantity type="actual" uom="PLT">1.0</Quantity>
+<Quantity type="planned" uom="PLT">1.0</Quantity>
+<Quantity type="ordered" uom="PLT">1.0</Quantity>
+<Quantity type="delivered" uom="">0.0</Quantity>
+</Quantities>
+<Dimensions><Dimension type="actual" dim="Width" uom="in">48.0</Dimension>
+<Dimension type="actual" dim="Length" uom="in">48.0</Dimension>
+<Dimension type="actual" dim="Height" uom="in">48.0</Dimension>
+<Dimension type="planned" dim="Width" uom=" ">0.0</Dimension>
+<Dimension type="planned" dim="Length" uom=" ">0.0</Dimension>
+<Dimension type="planned" dim="Height" uom=" ">0.0</Dimension>
+</Dimensions>
+<FreightClass type="delivered">0.0</FreightClass>
+<Stackability>0</Stackability>
+<TrackingNumber/>
+<DeliveryStatus/>
+<EquipmentRequired>false</EquipmentRequired>
+<ReferenceNumbers></ReferenceNumbers>
+<LineItem lineNumber="-1" internalId="27145133614"><Weights><Weight type="ordered" uom="lb">3500.0</Weight>
+</Weights>
+<Quantities><Quantity type="ordered" uom="PLT">1.0</Quantity>
+</Quantities>
+<ItemId>FAK</ItemId>
+<Description>Freight All Kind</Description>
+<FreightClass>85.0</FreightClass>
+<Commodity>General:General</Commodity>
+<NmfcCode/>
+<StccCode/>
+<CustomerPartNum/>
+<ManufacturerPartNum/>
+<DistributorPartNum/>
+<Cube>0</Cube>
+<TemperatureRange/>
+<HazardousMaterial>false</HazardousMaterial>
+<HazMatDetail internalId=""><ProperShippingName/>
+<HazMatID/>
+<PackageGroup/>
+<HazMatClass/>
+<ContactName/>
+<ContactPhone/>
+<HazMatPlacards>false</HazMatPlacards>
+<HazMatPlacardsDetails/>
+<HazMatEMSNumber/>
+<HazMatFlashPointTemp/>
+<Comments/>
+</HazMatDetail>
+<Dimensions><Dimension type="ordered" dim="Width" uom="in">0.0</Dimension>
+<Dimension type="ordered" dim="Length" uom="in">0.0</Dimension>
+<Dimension type="ordered" dim="Height" uom="in">0.0</Dimension>
+</Dimensions>
+<HarmonizedTariffCode/>
+<PortOfLading/>
+<CountryOfOrigin/>
+<CountryOfManufacture/>
+<CustomsValue/>
+<CustomsValueCurrency>USD</CustomsValueCurrency>
+<InsuredValue/>
+<InsuredValueCurrency>USD</InsuredValueCurrency>
+<AESExportCode/>
+<ScheduleBNumber/>
+<Domestic>D</Domestic>
+<ECCN/>
+<OriginationCountry>US</OriginationCountry>
+<ManufacturingCountry>US</ManufacturingCountry>
+<LicenseNumber/>
+<LicenseType/>
+<ReferenceNumbers></ReferenceNumbers>
+</LineItem>
+</ItemGroup>
+</ItemGroups>
+</Package>
+</Packages>
+</RelatedItems>
+<EquipmentList></EquipmentList>
+<ScheduledEquipment></ScheduledEquipment>
+<Payment><Method>Prepaid</Method>
+<BillTo><Address type="Bill To" isResidential="false" isPrimary="false" internalId="27145133853"><Owner>Carriergistics Sandbox</Owner>
+<CustomerAcctNum>CarSand</CustomerAcctNum>
+<AppointmentTime type="earliest">07:00 AM</AppointmentTime>
+<AppointmentTime type="latest">03:00 PM</AppointmentTime>
+<LocationCode>LOC11</LocationCode>
+<Name>Payables c/o Carriergistics</Name>
+<AddrLine1>739 North Avenue</AddrLine1>
+<AddrLine2/>
+<City>Glendale Heights</City>
+<StateProvince>IL</StateProvince>
+<PostalCode>60139</PostalCode>
+<CountryCode>US</CountryCode>
+<GeoLoc latDegrees="41919616" latDirection="N" longDegrees="88077758" longDirection="W"></GeoLoc>
+<Contacts><Contact type="" oid="27145133876"><Name>Contact</Name>
+<ContactMethods><ContactMethod sequenceNum="1" type="Phone">8005551212</ContactMethod>
+<ContactMethod sequenceNum="2" type="Email">contact@noemail.com</ContactMethod>
+</ContactMethods>
+</Contact>
+</Contacts>
+<Comments/>
+</Address>
+</BillTo>
+</Payment>
+<PODReceived>false</PODReceived>
+<ProofOfPickupReceived>false</ProofOfPickupReceived>
+<RelatedParties></RelatedParties>
+<Status>Delivered</Status>
+<AssignedTo/>
+<Owner>Carriergistics Sandbox</Owner>
+<Audits></Audits>
+<Carriers></Carriers>
+<TerminalInfo type="Carrier"><Origin></Origin>
+<Destination></Destination>
+</TerminalInfo>
+<TerminalInfo type="Customer"><Origin></Origin>
+<Destination></Destination>
+</TerminalInfo>
+<Dates><Pickup><Date type="earliest">09/13/2019 07:00</Date>
+<Date type="latest">09/13/2019 15:00</Date>
+<Date type="planned">09/13/2019 07:00</Date>
+<Date type="actual">09/13/2019 15:14</Date>
+</Pickup>
+<Drop><Date type="earliest">09/13/2019 07:00</Date>
+<Date type="latest">09/13/2019 15:00</Date>
+<Date type="planned">09/13/2019 07:00</Date>
+<Date type="actual">09/13/2019 15:15</Date>
+</Drop>
+</Dates>
+<Plan><Events count="2"><Event type="Pickup" sequenceNum="1" internalId="27145133689"><CarrierActionCode/>
+<Dates><Date type="earliest">09/13/2019 07:00</Date>
+<Date type="latest">09/13/2019 15:00</Date>
+<Date type="planned">09/13/2019 07:00</Date>
+<Date type="actual">09/13/2019 15:14</Date>
+</Dates>
+<LateReason/>
+<AppointmentType/>
+<Address type="Shipper" isResidential="false" isPrimary="false" internalId="27145133662"><AppointmentTime type="earliest">07:00 AM</AppointmentTime>
+<AppointmentTime type="latest">03:00 PM</AppointmentTime>
+<LocationCode>LOC28</LocationCode>
+<Name>Toyo Seat Corp</Name>
+<AddrLine1>2155 Almont Ave</AddrLine1>
+<AddrLine2/>
+<City>Imlay city</City>
+<StateProvince>MI</StateProvince>
+<PostalCode>48444</PostalCode>
+<CountryCode>US</CountryCode>
+<GeoLoc latDegrees="43055431" latDirection="N" longDegrees="83068191" longDirection="W"></GeoLoc>
+<Contacts/>
+<Comments/>
+</Address>
+<Weight type="firstAvail" uom="lb">3500.0</Weight>
+<Shipments><ReferenceNumbers><ReferenceNumber type="Shipment ID" isPrimary="true" internalId="27145133500">SN51</ReferenceNumber>
+</ReferenceNumbers>
+</Shipments>
+<Activities></Activities>
+</Event>
+<Event type="Drop" sequenceNum="2" internalId="27145133767"><CarrierActionCode/>
+<Dates><Date type="earliest">09/13/2019 07:00</Date>
+<Date type="latest">09/13/2019 15:00</Date>
+<Date type="planned">09/13/2019 07:00</Date>
+<Date type="actual">09/13/2019 15:15</Date>
+</Dates>
+<LateReason/>
+<AppointmentType/>
+<Address type="Consignee" isResidential="false" isPrimary="false" internalId="27145133740"><AppointmentTime type="earliest">07:00 AM</AppointmentTime>
+<AppointmentTime type="latest">03:00 PM</AppointmentTime>
+<LocationCode>LOC29</LocationCode>
+<Name>Lear Corp Portage</Name>
+<AddrLine1>6675 Daniel Burnham DR</AddrLine1>
+<AddrLine2/>
+<City>Portage</City>
+<StateProvince>IN</StateProvince>
+<PostalCode>46368</PostalCode>
+<CountryCode>US</CountryCode>
+<GeoLoc latDegrees="41584621" latDirection="N" longDegrees="87174720" longDirection="W"></GeoLoc>
+<Contacts/>
+<Comments/>
+</Address>
+<Weight type="firstAvail" uom="lb">3500.0</Weight>
+<Shipments><ReferenceNumbers><ReferenceNumber type="Shipment ID" isPrimary="true" internalId="27145133500">SN51</ReferenceNumber>
+</ReferenceNumbers>
+</Shipments>
+<Activities></Activities>
+</Event>
+</Events>
+</Plan>
+<Shipments><Shipment internalId="27145133495" type="Regular" createBy="Ray.Deluca" createDate="09/13/2019 15:06" updateBy="Ray.Deluca" updateDate="09/13/2019 15:16"><ReferenceNumbers><ReferenceNumber type="Shipment ID" isPrimary="true" internalId="27145133500">SN51</ReferenceNumber>
+<ReferenceNumber type="Shipping Order" isPrimary="false" internalId="27145133906">SO48</ReferenceNumber>
+<ReferenceNumber type="Load ID" isPrimary="false" internalId="27145133969">LD52</ReferenceNumber>
+<ReferenceNumber type="PRO" isPrimary="false" internalId="27145133979">LD52</ReferenceNumber>
+<ReferenceNumber type="SCAC" isPrimary="false" internalId="27145141766">MGC4</ReferenceNumber>
+<ReferenceNumber type="Customer Acct Number" isPrimary="false" internalId="25625093355">CarSand</ReferenceNumber>
+</ReferenceNumbers>
+<Comments><Comment type="SpecialInstructions"></Comment>
+</Comments>
+<Status>Delivered</Status>
+<AssignedTo/>
+<Owner>Carriergistics Sandbox</Owner>
+<Audits><Audit timestamp="" user="Ray.Deluca" action="Tendered"/></Audits>
+<QuoteDetail><QuotedTo/>
+<QuotePhone/>
+<QuoteFax/>
+<QuoteEmail/>
+<QuoteDate/>
+<QuoteBy>Ray.Deluca</QuoteBy>
+</QuoteDetail>
+<Carriers><Carrier type="Planned" internalId="25628079001"><CarrierId>(25628079001,3840,0)</CarrierId>
+<CarrierName>MG Carrier 4</CarrierName>
+<SCAC>MGC4</SCAC>
+<Mode>LTL</Mode>
+<Service>Standard</Service>
+<ServiceDays>2.0</ServiceDays>
+<Distance>279.67</Distance>
+<Id>2352355</Id>
+<MCNumber>2352355</MCNumber>
+<USDOT/>
+<InsuranceTypes><Insurance type="Cargo" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+<Insurance type="General" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+<Insurance type="Liability" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+</InsuranceTypes>
+<Address type="Carrier" isResidential="false" isPrimary="false" internalId="25628076609"><Owner>Carriergistics Sandbox</Owner>
+<CustomerAcctNum>CarSand</CustomerAcctNum>
+<LocationCode>LOC17</LocationCode>
+<Name>MG Carrier 4</Name>
+<AddrLine1>615 Miami Ave</AddrLine1>
+<AddrLine2/>
+<City>Kansas City</City>
+<StateProvince>KS</StateProvince>
+<PostalCode>66105</PostalCode>
+<CountryCode>US</CountryCode>
+<GeoLoc latDegrees="39081798" latDirection="N" longDegrees="94633598" longDirection="W"></GeoLoc>
+<Contacts><Contact type="" oid="25628076634"><Name>Contact</Name>
+<ContactMethods><ContactMethod sequenceNum="1" type="Phone">8005551212</ContactMethod>
+<ContactMethod sequenceNum="2" type="Email">contact@noemail.com</ContactMethod>
+</ContactMethods>
+</Contact>
+</Contacts>
+<Comments/>
+</Address>
+</Carrier>
+</Carriers>
+<TerminalInfo type="Carrier"><Origin></Origin>
+<Destination></Destination>
+</TerminalInfo>
+<TerminalInfo type="Customer"><Origin></Origin>
+<Destination></Destination>
+</TerminalInfo>
+<EquipmentList></EquipmentList>
+<ScheduledEquipment></ScheduledEquipment>
+<Quantities><Quantity type="package" uom="PLT">1.0</Quantity>
+</Quantities>
+<Weights><Weight type="actual" uom="lb">3500.0</Weight>
+<Weight type="planned" uom="lb">3500.0</Weight>
+<Weight type="ordered" uom="lb">3500.0</Weight>
+<Weight type="delivered" uom="lb">0.0</Weight>
+</Weights>
+<Dimensions><Dimension type="" dim="LinearFeet" uom="ft">0.0</Dimension>
+<Dimension type="" dim="RatingCount" uom="ct">0.0</Dimension>
+</Dimensions>
+<Dates><Pickup><Date type="earliest">09/13/2019 07:00</Date>
+<Date type="latest">09/13/2019 15:00</Date>
+<Date type="actual">09/13/2019 15:14</Date>
+</Pickup>
+<Drop><Date type="earliest">09/13/2019 07:00</Date>
+<Date type="latest">09/13/2019 15:00</Date>
+<Date type="actual">09/13/2019 15:15</Date>
+</Drop>
+</Dates>
+<PriceSheets><PriceSheet type="Cost" chargeModel="NORMALIZED_MANUAL" isSelected="true" isAllocated="true" currencyCode="USD" createDate="09/13/2019 15:09" updateDate="09/13/2019 15:09" internalId="27145139441" createBy="Ray.Deluca" updateBy="Ray.Deluca"><AccessorialTotal>0.00</AccessorialTotal>
+<SubTotal>400.00</SubTotal>
+<Total>400.00</Total>
+<NormalizedTotal currencyCode="USD">400.00</NormalizedTotal>
+<ContractId/>
+<ContractName/>
+<Carrier internalId="25628078920"><CarrierId>(25628078920,3840,0)</CarrierId>
+<CarrierName>MG Carrier 1</CarrierName>
+<SCAC>MGC1</SCAC>
+<Mode>TL</Mode>
+<Service>Standard</Service>
+<ServiceDays>0.0</ServiceDays>
+<Distance>279.67</Distance>
+<Id>52346423t234t</Id>
+<MCNumber>52346423t234t</MCNumber>
+<USDOT/>
+<InsuranceTypes><Insurance type="Cargo" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+<Insurance type="General" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+<Insurance type="Liability" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+</InsuranceTypes>
+<Address type="Carrier" isResidential="false" isPrimary="false" internalId="25628076506"><Owner>Carriergistics Sandbox</Owner>
+<CustomerAcctNum>CarSand</CustomerAcctNum>
+<LocationCode>LOC14</LocationCode>
+<Name>MG Carrier 1</Name>
+<AddrLine1>PO Box 789</AddrLine1>
+<AddrLine2/>
+<City>Elk Grove Village</City>
+<StateProvince>IL</StateProvince>
+<PostalCode>60007</PostalCode>
+<CountryCode>US</CountryCode>
+<GeoLoc latDegrees="42006679" latDirection="N" longDegrees="88004753" longDirection="W"></GeoLoc>
+<Contacts><Contact type="" oid="25628076531"><Name>Contact</Name>
+<ContactMethods><ContactMethod sequenceNum="1" type="Phone">8005551212</ContactMethod>
+<ContactMethod sequenceNum="2" type="Email">contact@noemail.com</ContactMethod>
+</ContactMethods>
+</Contact>
+</Contacts>
+<Comments/>
+</Address>
+</Carrier>
+<ReasonCode/>
+<Status/>
+<LaneID>Imlay city,MI to Portage,IN</LaneID>
+<Zone/>
+<RouteGuidePriority/>
+<CarrierLocationOid>25628076506</CarrierLocationOid>
+<OriginService/>
+<DestinationService/>
+<DimFactor>0.0</DimFactor>
+<DimWeight>0.0</DimWeight>
+<TotalWeight>3500.0</TotalWeight>
+<ChargeableWeight>3500.0</ChargeableWeight>
+<Charges><Charge sequenceNum="1" type="ITEM" itemGroupId="" allocOid="27145133643" internalId="27145139451"><Description>Total Line Haul</Description>
+<EdiCode/>
+<Amount>400.00</Amount>
+<Rate>400.00</Rate>
+<RateQualifier>FR</RateQualifier>
+<Quantity/>
+<Weight>0.0</Weight>
+<DimWeight>0.0</DimWeight>
+<FreightClass>0.0</FreightClass>
+<FakFreightClass>0.0</FakFreightClass>
+<IsMin>false</IsMin>
+<IsMax>false</IsMax>
+<IsNontaxable>false</IsNontaxable>
+<ReferenceNumbers></ReferenceNumbers>
+</Charge>
+</Charges>
+<Comments/>
+</PriceSheet>
+<PriceSheet type="Charge" chargeModel="NORMALIZED_MANUAL" isSelected="true" isAllocated="true" currencyCode="USD" createDate="09/13/2019 15:11" updateDate="09/13/2019 15:11" internalId="27145141791" createBy="Ray.Deluca" updateBy="Ray.Deluca"><AccessorialTotal>0.00</AccessorialTotal>
+<SubTotal>185.15</SubTotal>
+<Total>185.15</Total>
+<NormalizedTotal currencyCode="USD">185.15</NormalizedTotal>
+<ContractId/>
+<ContractName/>
+<Carrier internalId="25628079001"><CarrierId>(25628079001,3840,0)</CarrierId>
+<CarrierName>MG Carrier 4</CarrierName>
+<SCAC>MGC4</SCAC>
+<Mode>LTL</Mode>
+<Service>Standard</Service>
+<ServiceDays>2.0</ServiceDays>
+<Distance>279.67</Distance>
+<Id>2352355</Id>
+<MCNumber>2352355</MCNumber>
+<USDOT/>
+<InsuranceTypes><Insurance type="Cargo" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+<Insurance type="General" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+<Insurance type="Liability" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+</InsuranceTypes>
+<Address type="Carrier" isResidential="false" isPrimary="false" internalId="25628076609"><Owner>Carriergistics Sandbox</Owner>
+<CustomerAcctNum>CarSand</CustomerAcctNum>
+<LocationCode>LOC17</LocationCode>
+<Name>MG Carrier 4</Name>
+<AddrLine1>615 Miami Ave</AddrLine1>
+<AddrLine2/>
+<City>Kansas City</City>
+<StateProvince>KS</StateProvince>
+<PostalCode>66105</PostalCode>
+<CountryCode>US</CountryCode>
+<GeoLoc latDegrees="39081798" latDirection="N" longDegrees="94633598" longDirection="W"></GeoLoc>
+<Contacts><Contact type="" oid="25628076634"><Name>Contact</Name>
+<ContactMethods><ContactMethod sequenceNum="1" type="Phone">8005551212</ContactMethod>
+<ContactMethod sequenceNum="2" type="Email">contact@noemail.com</ContactMethod>
+</ContactMethods>
+</Contact>
+</Contacts>
+<Comments/>
+</Address>
+</Carrier>
+<ReasonCode/>
+<Status/>
+<LaneID>Imlay city,MI to Portage,IN</LaneID>
+<Zone>US</Zone>
+<RouteGuidePriority/>
+<CarrierLocationOid>25628076609</CarrierLocationOid>
+<OriginService/>
+<DestinationService/>
+<DimFactor>0.0</DimFactor>
+<DimWeight>0.0</DimWeight>
+<TotalWeight>3500.0</TotalWeight>
+<ChargeableWeight>3500.0</ChargeableWeight>
+<Charges><Charge sequenceNum="1" type="ITEM" itemGroupId="" allocOid="27145133627" internalId="27145141792"><Description>Total Line Haul</Description>
+<EdiCode/>
+<Amount>805.00</Amount>
+<Rate>805.00</Rate>
+<RateQualifier>FR</RateQualifier>
+<Quantity/>
+<Weight>0.0</Weight>
+<DimWeight>0.0</DimWeight>
+<FreightClass>0.0</FreightClass>
+<FakFreightClass>0.0</FakFreightClass>
+<IsMin>false</IsMin>
+<IsMax>false</IsMax>
+<IsNontaxable>false</IsNontaxable>
+<ReferenceNumbers></ReferenceNumbers>
+</Charge>
+<Charge sequenceNum="2" type="DISCOUNT" itemGroupId="" allocOid="27145133627" internalId="27145141793"><Description>Discount</Description>
+<EdiCode>DSC</EdiCode>
+<Amount>-619.85</Amount>
+<Rate>-619.85</Rate>
+<RateQualifier>FR</RateQualifier>
+<Quantity/>
+<Weight>0.0</Weight>
+<DimWeight>0.0</DimWeight>
+<FreightClass>0.0</FreightClass>
+<FakFreightClass>0.0</FakFreightClass>
+<IsMin>false</IsMin>
+<IsMax>false</IsMax>
+<IsNontaxable>false</IsNontaxable>
+<ReferenceNumbers></ReferenceNumbers>
+</Charge>
+</Charges>
+<Comments/>
+</PriceSheet>
+</PriceSheets>
+<Shipper><Address type="Shipper" isResidential="false" isPrimary="false" internalId="27145133511"><AppointmentTime type="earliest">07:00 AM</AppointmentTime>
+<AppointmentTime type="latest">03:00 PM</AppointmentTime>
+<LocationCode>LOC28</LocationCode>
+<Name>Toyo Seat Corp</Name>
+<AddrLine1>2155 Almont Ave</AddrLine1>
+<AddrLine2/>
+<City>Imlay city</City>
+<StateProvince>MI</StateProvince>
+<PostalCode>48444</PostalCode>
+<CountryCode>US</CountryCode>
+<GeoLoc latDegrees="43055431" latDirection="N" longDegrees="83068191" longDirection="W"></GeoLoc>
+<Contacts/>
+<Comments/>
+</Address>
+</Shipper>
+<Consignee><Address type="Consignee" isResidential="false" isPrimary="false" internalId="27145133541"><AppointmentTime type="earliest">07:00 AM</AppointmentTime>
+<AppointmentTime type="latest">03:00 PM</AppointmentTime>
+<LocationCode>LOC29</LocationCode>
+<Name>Lear Corp Portage</Name>
+<AddrLine1>6675 Daniel Burnham DR</AddrLine1>
+<AddrLine2/>
+<City>Portage</City>
+<StateProvince>IN</StateProvince>
+<PostalCode>46368</PostalCode>
+<CountryCode>US</CountryCode>
+<GeoLoc latDegrees="41584621" latDirection="N" longDegrees="87174720" longDirection="W"></GeoLoc>
+<Contacts/>
+<Comments/>
+</Address>
+</Consignee>
+<Services/>
+<Packages><Package type="" internalId="27145133616"><Dimensions><Dimension type="" dim="Width" uom=" ">0.0</Dimension>
+<Dimension type="" dim="Length" uom=" ">0.0</Dimension>
+<Dimension type="" dim="Height" uom=" ">0.0</Dimension>
+</Dimensions>
+<Weights><Weight type="actual" uom="lb">3500.0</Weight>
+<Weight type="planned" uom="lb">3500.0</Weight>
+<Weight type="ordered" uom="lb">3500.0</Weight>
+<Weight type="delivered" uom="lb">0.0</Weight>
+</Weights>
+<ItemGroups><ItemGroup internalId="27145133616" isShipUnit="false" isHandlingUnit="true" sequence=""><Description>Freight All Kind</Description>
+<ContainmentId>0</ContainmentId>
+<Weights><Weight type="actual" uom="lb">3500.0</Weight>
+<Weight type="planned" uom="lb">3500.0</Weight>
+<Weight type="ordered" uom="lb">3500.0</Weight>
+<Weight type="delivered" uom="lb">0.0</Weight>
+</Weights>
+<Quantities><Quantity type="actual" uom="PLT">1.0</Quantity>
+<Quantity type="planned" uom="PLT">1.0</Quantity>
+<Quantity type="ordered" uom="PLT">1.0</Quantity>
+<Quantity type="delivered" uom="">0.0</Quantity>
+</Quantities>
+<Dimensions><Dimension type="actual" dim="Width" uom="in">48.0</Dimension>
+<Dimension type="actual" dim="Length" uom="in">48.0</Dimension>
+<Dimension type="actual" dim="Height" uom="in">48.0</Dimension>
+<Dimension type="planned" dim="Width" uom=" ">0.0</Dimension>
+<Dimension type="planned" dim="Length" uom=" ">0.0</Dimension>
+<Dimension type="planned" dim="Height" uom=" ">0.0</Dimension>
+</Dimensions>
+<FreightClass type="delivered">0.0</FreightClass>
+<Stackability>0</Stackability>
+<TrackingNumber/>
+<DeliveryStatus/>
+<EquipmentRequired>false</EquipmentRequired>
+<ReferenceNumbers></ReferenceNumbers>
+<LineItem lineNumber="-1" internalId="27145133614"><Weights><Weight type="ordered" uom="lb">3500.0</Weight>
+</Weights>
+<Quantities><Quantity type="ordered" uom="PLT">1.0</Quantity>
+</Quantities>
+<ItemId>FAK</ItemId>
+<Description>Freight All Kind</Description>
+<FreightClass>85.0</FreightClass>
+<Commodity>General:General</Commodity>
+<NmfcCode/>
+<StccCode/>
+<CustomerPartNum/>
+<ManufacturerPartNum/>
+<DistributorPartNum/>
+<Cube>0</Cube>
+<TemperatureRange/>
+<HazardousMaterial>false</HazardousMaterial>
+<HazMatDetail internalId=""><ProperShippingName/>
+<HazMatID/>
+<PackageGroup/>
+<HazMatClass/>
+<ContactName/>
+<ContactPhone/>
+<HazMatPlacards>false</HazMatPlacards>
+<HazMatPlacardsDetails/>
+<HazMatEMSNumber/>
+<HazMatFlashPointTemp/>
+<Comments/>
+</HazMatDetail>
+<Dimensions><Dimension type="ordered" dim="Width" uom="in">0.0</Dimension>
+<Dimension type="ordered" dim="Length" uom="in">0.0</Dimension>
+<Dimension type="ordered" dim="Height" uom="in">0.0</Dimension>
+</Dimensions>
+<HarmonizedTariffCode/>
+<PortOfLading/>
+<CountryOfOrigin/>
+<CountryOfManufacture/>
+<CustomsValue/>
+<CustomsValueCurrency>USD</CustomsValueCurrency>
+<InsuredValue/>
+<InsuredValueCurrency>USD</InsuredValueCurrency>
+<AESExportCode/>
+<ScheduleBNumber/>
+<Domestic>D</Domestic>
+<ECCN/>
+<OriginationCountry>US</OriginationCountry>
+<ManufacturingCountry>US</ManufacturingCountry>
+<LicenseNumber/>
+<LicenseType/>
+<ReferenceNumbers></ReferenceNumbers>
+</LineItem>
+</ItemGroup>
+</ItemGroups>
+</Package>
+</Packages>
+<Payment><Method>Prepaid</Method>
+<BillTo thirdParty="true"><Address type="Bill To" isResidential="false" isPrimary="false" internalId="27145133571"><Owner>Carriergistics Sandbox</Owner>
+<CustomerAcctNum>CarSand</CustomerAcctNum>
+<AppointmentTime type="earliest">07:00 AM</AppointmentTime>
+<AppointmentTime type="latest">03:00 PM</AppointmentTime>
+<LocationCode>LOC11</LocationCode>
+<Name>Payables c/o Carriergistics</Name>
+<AddrLine1>739 North Avenue</AddrLine1>
+<AddrLine2/>
+<City>Glendale Heights</City>
+<StateProvince>IL</StateProvince>
+<PostalCode>60139</PostalCode>
+<CountryCode>US</CountryCode>
+<GeoLoc latDegrees="41919616" latDirection="N" longDegrees="88077758" longDirection="W"></GeoLoc>
+<Contacts><Contact type="" oid="27145133596"><Name>Contact</Name>
+<ContactMethods><ContactMethod sequenceNum="1" type="Phone">8005551212</ContactMethod>
+<ContactMethod sequenceNum="2" type="Email">contact@noemail.com</ContactMethod>
+</ContactMethods>
+</Contact>
+</Contacts>
+<Comments/>
+</Address>
+</BillTo>
+</Payment>
+<PODReceived>true</PODReceived>
+<RelatedParties></RelatedParties>
+<Orders></Orders>
+<LateReason code=""></LateReason>
+<OriginalSource/>
+<Enterprise name="Carriergistics Sandbox" parentName="Carriergistics Admin" internalId="25625093205" active="true">
+<MultiNational>false</MultiNational>
+<Type>Regular</Type>
+<Description>LSP February 2018 Sandbox</Description>
+<CustomerAcctNum>CarSand</CustomerAcctNum>
+<FederalEIN/>
+<CurrencyCode>USD</CurrencyCode>
+<DUNS/>
+<PrimarySIC>0000</PrimarySIC>
+<Ranking/>
+<CarrierInvoicePODRequired>false</CarrierInvoicePODRequired>
+<CustomerInvoicePODRequired>false</CustomerInvoicePODRequired>
+<Credit cashOnly="false" limit="0.0" checkOnShipmentDuplicate=""/>
+<Visibility login="true" quote="true"/>
+<DisplayNotes/>
+<Locations></Locations>
+</Enterprise>
+<Activities></Activities>
+<Links></Links>
+</Shipment>
+</Shipments>
+<ExecutionLoads><MasterBillOfLading internalId="27145133627" type="Regular" createBy="Ray.Deluca" createDate="09/13/2019 15:06" updateBy="Carriergistics Report Writer" updateDate="09/13/2019 16:01"><ReferenceNumbers><ReferenceNumber type="Load ID" isPrimary="true" internalId="27145133636">LD52</ReferenceNumber>
+<ReferenceNumber type="Shipment ID" isPrimary="false" internalId="27145133966">SN51</ReferenceNumber>
+<ReferenceNumber type="PRO" isPrimary="false" internalId="27145133976">LD52</ReferenceNumber>
+<ReferenceNumber type="Event Tracking" isPrimary="false" internalId="27145133985">pd</ReferenceNumber>
+<ReferenceNumber type="Commission1VendorId" isPrimary="false" internalId="27145133989">Planning</ReferenceNumber>
+<ReferenceNumber type="Commission2VendorId" isPrimary="false" internalId="27145133992">Execution</ReferenceNumber>
+<ReferenceNumber type="Internal Rate Index" isPrimary="false" internalId="27145133995">$517.40 - +</ReferenceNumber>
+<ReferenceNumber type="RateFriend Spot Index" isPrimary="false" internalId="27145133998">rate:2.01,fuel:0.28,timePeriod:2019-37,mode:Per Mile</ReferenceNumber>
+<ReferenceNumber type="RateFriend Contract Index" isPrimary="false" internalId="27145134001">rate:2.87,fuel:0.28,timePeriod:2019-37,mode:Per Mile</ReferenceNumber>
+<ReferenceNumber type="CPU Carrier" isPrimary="false" internalId="27145141772">CPUP</ReferenceNumber>
+<ReferenceNumber type="SCAC" isPrimary="false" internalId="27145141776">MGC4</ReferenceNumber>
+<ReferenceNumber type="Event Tracking" isPrimary="false" internalId="27145143781">p</ReferenceNumber>
+<ReferenceNumber type="Last Location" isPrimary="false" internalId="27145145719">Imlay city, MI - Miles to Next Stop: 0.0</ReferenceNumber>
+<ReferenceNumber type="Event Tracking" isPrimary="false" internalId="27145145763">Pd</ReferenceNumber>
+<ReferenceNumber type="Last Location" isPrimary="false" internalId="27145145801">Imlay city, MI - Miles to Next Stop: 279.7</ReferenceNumber>
+<ReferenceNumber type="Last Location" isPrimary="false" internalId="27145145967">Portage, IN - Miles to Next Stop: 0.0</ReferenceNumber>
+<ReferenceNumber type="Event Tracking" isPrimary="false" internalId="27145145988">PD</ReferenceNumber>
+<ReferenceNumber type="BOL" isPrimary="false" internalId="27145153093">543232</ReferenceNumber>
+<ReferenceNumber type="PO Number" isPrimary="false" internalId="27145165891">88888</ReferenceNumber>
+<ReferenceNumber type="Customer Acct Number" isPrimary="false" internalId="25625093355">CarSand</ReferenceNumber>
+</ReferenceNumbers>
+<RelatedCustomerLoads><MasterBillOfLading internalId="27145133643"/>
+</RelatedCustomerLoads>
+<Comments/>
+<Services/>
+<RelatedItems><Packages><Package type="" internalId="27145133616"><Dimensions><Dimension type="" dim="Width" uom=" ">0.0</Dimension>
+<Dimension type="" dim="Length" uom=" ">0.0</Dimension>
+<Dimension type="" dim="Height" uom=" ">0.0</Dimension>
+</Dimensions>
+<Weights><Weight type="actual" uom="lb">3500.0</Weight>
+<Weight type="planned" uom="lb">3500.0</Weight>
+<Weight type="ordered" uom="lb">3500.0</Weight>
+<Weight type="delivered" uom="lb">0.0</Weight>
+</Weights>
+<ItemGroups><ItemGroup internalId="27145133616" isShipUnit="false" isHandlingUnit="true" sequence=""><Description>Freight All Kind</Description>
+<ContainmentId>0</ContainmentId>
+<Weights><Weight type="actual" uom="lb">3500.0</Weight>
+<Weight type="planned" uom="lb">3500.0</Weight>
+<Weight type="ordered" uom="lb">3500.0</Weight>
+<Weight type="delivered" uom="lb">0.0</Weight>
+</Weights>
+<Quantities><Quantity type="actual" uom="PLT">1.0</Quantity>
+<Quantity type="planned" uom="PLT">1.0</Quantity>
+<Quantity type="ordered" uom="PLT">1.0</Quantity>
+<Quantity type="delivered" uom="">0.0</Quantity>
+</Quantities>
+<Dimensions><Dimension type="actual" dim="Width" uom="in">48.0</Dimension>
+<Dimension type="actual" dim="Length" uom="in">48.0</Dimension>
+<Dimension type="actual" dim="Height" uom="in">48.0</Dimension>
+<Dimension type="planned" dim="Width" uom=" ">0.0</Dimension>
+<Dimension type="planned" dim="Length" uom=" ">0.0</Dimension>
+<Dimension type="planned" dim="Height" uom=" ">0.0</Dimension>
+</Dimensions>
+<FreightClass type="delivered">0.0</FreightClass>
+<Stackability>0</Stackability>
+<TrackingNumber/>
+<DeliveryStatus/>
+<EquipmentRequired>false</EquipmentRequired>
+<ReferenceNumbers></ReferenceNumbers>
+<LineItem lineNumber="-1" internalId="27145133614"><Weights><Weight type="ordered" uom="lb">3500.0</Weight>
+</Weights>
+<Quantities><Quantity type="ordered" uom="PLT">1.0</Quantity>
+</Quantities>
+<ItemId>FAK</ItemId>
+<Description>Freight All Kind</Description>
+<FreightClass>85.0</FreightClass>
+<Commodity>General:General</Commodity>
+<NmfcCode/>
+<StccCode/>
+<CustomerPartNum/>
+<ManufacturerPartNum/>
+<DistributorPartNum/>
+<Cube>0</Cube>
+<TemperatureRange/>
+<HazardousMaterial>false</HazardousMaterial>
+<HazMatDetail internalId=""><ProperShippingName/>
+<HazMatID/>
+<PackageGroup/>
+<HazMatClass/>
+<ContactName/>
+<ContactPhone/>
+<HazMatPlacards>false</HazMatPlacards>
+<HazMatPlacardsDetails/>
+<HazMatEMSNumber/>
+<HazMatFlashPointTemp/>
+<Comments/>
+</HazMatDetail>
+<Dimensions><Dimension type="ordered" dim="Width" uom="in">0.0</Dimension>
+<Dimension type="ordered" dim="Length" uom="in">0.0</Dimension>
+<Dimension type="ordered" dim="Height" uom="in">0.0</Dimension>
+</Dimensions>
+<HarmonizedTariffCode/>
+<PortOfLading/>
+<CountryOfOrigin/>
+<CountryOfManufacture/>
+<CustomsValue/>
+<CustomsValueCurrency>USD</CustomsValueCurrency>
+<InsuredValue/>
+<InsuredValueCurrency>USD</InsuredValueCurrency>
+<AESExportCode/>
+<ScheduleBNumber/>
+<Domestic>D</Domestic>
+<ECCN/>
+<OriginationCountry>US</OriginationCountry>
+<ManufacturingCountry>US</ManufacturingCountry>
+<LicenseNumber/>
+<LicenseType/>
+<ReferenceNumbers></ReferenceNumbers>
+</LineItem>
+</ItemGroup>
+</ItemGroups>
+</Package>
+</Packages>
+</RelatedItems>
+<EquipmentList></EquipmentList>
+<ScheduledEquipment></ScheduledEquipment>
+<Payment><Method>Prepaid</Method>
+<BillTo><Address type="Bill To" isResidential="false" isPrimary="false" internalId="27145133921"><Owner>Carriergistics Sandbox</Owner>
+<CustomerAcctNum>CarSand</CustomerAcctNum>
+<AppointmentTime type="earliest">07:00 AM</AppointmentTime>
+<AppointmentTime type="latest">03:00 PM</AppointmentTime>
+<LocationCode>LOC11</LocationCode>
+<Name>Payables c/o Carriergistics</Name>
+<AddrLine1>739 North Avenue</AddrLine1>
+<AddrLine2/>
+<City>Glendale Heights</City>
+<StateProvince>IL</StateProvince>
+<PostalCode>60139</PostalCode>
+<CountryCode>US</CountryCode>
+<GeoLoc latDegrees="41919616" latDirection="N" longDegrees="88077758" longDirection="W"></GeoLoc>
+<Contacts><Contact type="" oid="27145133944"><Name>Contact</Name>
+<ContactMethods><ContactMethod sequenceNum="1" type="Phone">8005551212</ContactMethod>
+<ContactMethod sequenceNum="2" type="Email">contact@noemail.com</ContactMethod>
+</ContactMethods>
+</Contact>
+</Contacts>
+<Comments/>
+</Address>
+</BillTo>
+</Payment>
+<PODReceived>true</PODReceived>
+<ProofOfPickupReceived>false</ProofOfPickupReceived>
+<RelatedParties></RelatedParties>
+<Status>Delivered</Status>
+<AssignedTo/>
+<Owner>Carriergistics Sandbox</Owner>
+<Audits><Audit timestamp="" user="Ray.Deluca" action="Tendered"/><Audit timestamp="09/13/2019 16:01" user="" action="Extracted">T11</Audit>
+</Audits>
+<Carriers><Carrier type="Responsible" internalId="25628079001"><CarrierId>(25628079001,3840,0)</CarrierId>
+<CarrierName>MG Carrier 4</CarrierName>
+<SCAC>MGC4</SCAC>
+<Mode>LTL</Mode>
+<Service>Standard</Service>
+<ServiceDays>2.0</ServiceDays>
+<Distance>279.67</Distance>
+<Id>2352355</Id>
+<MCNumber>2352355</MCNumber>
+<USDOT/>
+<InsuranceTypes><Insurance type="Cargo" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+<Insurance type="General" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+<Insurance type="Liability" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+</InsuranceTypes>
+<Address type="Carrier" isResidential="false" isPrimary="false" internalId="25628076609"><Owner>Carriergistics Sandbox</Owner>
+<CustomerAcctNum>CarSand</CustomerAcctNum>
+<LocationCode>LOC17</LocationCode>
+<Name>MG Carrier 4</Name>
+<AddrLine1>615 Miami Ave</AddrLine1>
+<AddrLine2/>
+<City>Kansas City</City>
+<StateProvince>KS</StateProvince>
+<PostalCode>66105</PostalCode>
+<CountryCode>US</CountryCode>
+<GeoLoc latDegrees="39081798" latDirection="N" longDegrees="94633598" longDirection="W"></GeoLoc>
+<Contacts><Contact type="" oid="25628076634"><Name>Contact</Name>
+<ContactMethods><ContactMethod sequenceNum="1" type="Phone">8005551212</ContactMethod>
+<ContactMethod sequenceNum="2" type="Email">contact@noemail.com</ContactMethod>
+</ContactMethods>
+</Contact>
+</Contacts>
+<Comments/>
+</Address>
+</Carrier>
+</Carriers>
+<TerminalInfo type="Carrier"><Origin></Origin>
+<Destination></Destination>
+</TerminalInfo>
+<TerminalInfo type="Customer"><Origin></Origin>
+<Destination></Destination>
+</TerminalInfo>
+<Dates><Pickup><Date type="earliest">09/13/2019 07:00</Date>
+<Date type="latest">09/13/2019 15:00</Date>
+<Date type="planned">09/13/2019 07:00</Date>
+<Date type="actual">09/13/2019 15:14</Date>
+</Pickup>
+<Drop><Date type="earliest">09/13/2019 07:00</Date>
+<Date type="latest">09/13/2019 15:00</Date>
+<Date type="planned">09/13/2019 07:00</Date>
+<Date type="actual">09/13/2019 15:15</Date>
+</Drop>
+</Dates>
+<Plan><Events count="2"><Event type="Pickup" sequenceNum="1" internalId="27145133724"><CarrierActionCode/>
+<Dates><Date type="earliest">09/13/2019 07:00</Date>
+<Date type="latest">09/13/2019 15:00</Date>
+<Date type="planned">09/13/2019 07:00</Date>
+<Date type="actual">09/13/2019 15:14</Date>
+</Dates>
+<LateReason/>
+<AppointmentType/>
+<Address type="Shipper" isResidential="false" isPrimary="false" internalId="27145133697"><AppointmentTime type="earliest">07:00 AM</AppointmentTime>
+<AppointmentTime type="latest">03:00 PM</AppointmentTime>
+<LocationCode>LOC28</LocationCode>
+<Name>Toyo Seat Corp</Name>
+<AddrLine1>2155 Almont Ave</AddrLine1>
+<AddrLine2/>
+<City>Imlay city</City>
+<StateProvince>MI</StateProvince>
+<PostalCode>48444</PostalCode>
+<CountryCode>US</CountryCode>
+<GeoLoc latDegrees="43055431" latDirection="N" longDegrees="83068191" longDirection="W"></GeoLoc>
+<Contacts/>
+<Comments/>
+</Address>
+<Weight type="firstAvail" uom="lb">3500.0</Weight>
+<Shipments><ReferenceNumbers><ReferenceNumber type="Shipment ID" isPrimary="true" internalId="27145133500">SN51</ReferenceNumber>
+</ReferenceNumbers>
+</Shipments>
+<Activities><Activity type="Set Arrival / Departure" createDate="09/13/2019 15:13" createBy="Ray.Deluca" updateDate="09/13/2019 15:15" updateBy="Ray.Deluca" internalId="27145143777"><ActivityID>First Stop</ActivityID>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Complete</Status>
+<AssignedTo/>
+<PlannedDate>09/13/2019 07:00</PlannedDate>
+<PercentageComplete/>
+<CompletedDate>09/13/2019 15:14</CompletedDate>
+<StatusDetails/>
+<Location><Address type="" isResidential="false" isPrimary="false" internalId=""><LocationCode>LOC28</LocationCode>
+<Name>Toyo Seat Corp</Name>
+<AddrLine1>2155 Almont Ave</AddrLine1>
+<AddrLine2/>
+<City>Imlay city</City>
+<StateProvince>MI</StateProvince>
+<PostalCode>48444</PostalCode>
+<CountryCode>US</CountryCode>
+<GeoLoc latDegrees="43055431" latDirection="N" longDegrees="83068191" longDirection="W"></GeoLoc>
+<Contacts><Contact/>
+</Contacts>
+<Comments/>
+</Address>
+</Location>
+<Contact/>
+<Documents/>
+</Activity>
+</Activities>
+</Event>
+<Event type="Drop" sequenceNum="2" internalId="27145133802"><CarrierActionCode/>
+<Dates><Date type="earliest">09/13/2019 07:00</Date>
+<Date type="latest">09/13/2019 15:00</Date>
+<Date type="planned">09/13/2019 07:00</Date>
+<Date type="actual">09/13/2019 15:15</Date>
+</Dates>
+<LateReason/>
+<AppointmentType/>
+<Address type="Consignee" isResidential="false" isPrimary="false" internalId="27145133775"><AppointmentTime type="earliest">07:00 AM</AppointmentTime>
+<AppointmentTime type="latest">03:00 PM</AppointmentTime>
+<LocationCode>LOC29</LocationCode>
+<Name>Lear Corp Portage</Name>
+<AddrLine1>6675 Daniel Burnham DR</AddrLine1>
+<AddrLine2/>
+<City>Portage</City>
+<StateProvince>IN</StateProvince>
+<PostalCode>46368</PostalCode>
+<CountryCode>US</CountryCode>
+<GeoLoc latDegrees="41584621" latDirection="N" longDegrees="87174720" longDirection="W"></GeoLoc>
+<Contacts/>
+<Comments/>
+</Address>
+<Weight type="firstAvail" uom="lb">3500.0</Weight>
+<Shipments><ReferenceNumbers><ReferenceNumber type="Shipment ID" isPrimary="true" internalId="27145133500">SN51</ReferenceNumber>
+</ReferenceNumbers>
+</Shipments>
+<ProofOfDelivery><Signature><Name>gsrgersrd</Name>
+<DateTime>09/13/2019 15:15</DateTime>
+</Signature>
+</ProofOfDelivery>
+<Activities><Activity type="Set Arrival / Departure" createDate="09/13/2019 15:13" createBy="Ray.Deluca" updateDate="09/13/2019 15:15" updateBy="Ray.Deluca" internalId="27145143779"><ActivityID>Last Stop</ActivityID>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Complete</Status>
+<AssignedTo/>
+<PlannedDate>09/13/2019 07:00</PlannedDate>
+<PercentageComplete/>
+<CompletedDate>09/13/2019 15:15</CompletedDate>
+<StatusDetails/>
+<Location><Address type="" isResidential="false" isPrimary="false" internalId=""><LocationCode>LOC29</LocationCode>
+<Name>Lear Corp Portage</Name>
+<AddrLine1>6675 Daniel Burnham DR</AddrLine1>
+<AddrLine2/>
+<City>Portage</City>
+<StateProvince>IN</StateProvince>
+<PostalCode>46368</PostalCode>
+<CountryCode>US</CountryCode>
+<GeoLoc latDegrees="41584621" latDirection="N" longDegrees="87174720" longDirection="W"></GeoLoc>
+<Contacts><Contact/>
+</Contacts>
+<Comments/>
+</Address>
+</Location>
+<Contact/>
+<Documents/>
+</Activity>
+</Activities>
+</Event>
+</Events>
+</Plan>
+<Weights><Weight type="actual" uom="lb">3500.0</Weight>
+<Weight type="planned" uom="lb">3500.0</Weight>
+<Weight type="ordered" uom="lb">3500.0</Weight>
+<Weight type="delivered" uom="lb">0.0</Weight>
+</Weights>
+<Dimensions><Dimension type="" dim="LinearFeet" uom="ft">0.0</Dimension>
+<Dimension type="" dim="RatingCount" uom="ct">0.0</Dimension>
+</Dimensions>
+<Quantities><Quantity type="actual">1.0</Quantity>
+<Quantity type="planned">1.0</Quantity>
+<Quantity type="ordered">1.0</Quantity>
+<Quantity type="delivered">0.0</Quantity>
+</Quantities>
+<PriceSheets><PriceSheet type="Charge" chargeModel="NORMALIZED_NON_SMC" isSelected="true" isAllocated="false" currencyCode="USD" createDate="09/13/2019 15:11" updateDate="09/13/2019 15:13" internalId="27145141748" createBy="Ray.Deluca" updateBy="Ray.Deluca"><AccessorialTotal>0.00</AccessorialTotal>
+<SubTotal>185.15</SubTotal>
+<Total>185.15</Total>
+<NormalizedTotal currencyCode="USD">185.15</NormalizedTotal>
+<ContractId>(25633566734,3023,0)</ContractId>
+<ContractName>Carrier Sample MG Carrier 4</ContractName>
+<Carrier internalId="25628079001"><CarrierId>(25628079001,3840,0)</CarrierId>
+<CarrierName>MG Carrier 4</CarrierName>
+<SCAC>MGC4</SCAC>
+<Mode>LTL</Mode>
+<Service>Standard</Service>
+<ServiceDays>2.0</ServiceDays>
+<Distance>279.67</Distance>
+<Id>2352355</Id>
+<MCNumber>2352355</MCNumber>
+<USDOT/>
+<InsuranceTypes><Insurance type="Cargo" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+<Insurance type="General" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+<Insurance type="Liability" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+</InsuranceTypes>
+<Address type="Carrier" isResidential="false" isPrimary="false" internalId="25628076609"><Owner>Carriergistics Sandbox</Owner>
+<CustomerAcctNum>CarSand</CustomerAcctNum>
+<LocationCode>LOC17</LocationCode>
+<Name>MG Carrier 4</Name>
+<AddrLine1>615 Miami Ave</AddrLine1>
+<AddrLine2/>
+<City>Kansas City</City>
+<StateProvince>KS</StateProvince>
+<PostalCode>66105</PostalCode>
+<CountryCode>US</CountryCode>
+<GeoLoc latDegrees="39081798" latDirection="N" longDegrees="94633598" longDirection="W"></GeoLoc>
+<Contacts><Contact type="" oid="25628076634"><Name>Contact</Name>
+<ContactMethods><ContactMethod sequenceNum="1" type="Phone">8005551212</ContactMethod>
+<ContactMethod sequenceNum="2" type="Email">contact@noemail.com</ContactMethod>
+</ContactMethods>
+</Contact>
+</Contacts>
+<Comments/>
+</Address>
+</Carrier>
+<ReasonCode/>
+<Status>Booked</Status>
+<LaneID>Imlay city,MI to Portage,IN</LaneID>
+<Zone>US</Zone>
+<RouteGuidePriority/>
+<CarrierLocationOid>25628076609</CarrierLocationOid>
+<OriginService/>
+<DestinationService/>
+<DimFactor>0.0</DimFactor>
+<DimWeight>0.0</DimWeight>
+<TotalWeight>3500.0</TotalWeight>
+<ChargeableWeight>3500.0</ChargeableWeight>
+<Charges><Charge sequenceNum="1" type="ITEM" itemGroupId="" internalId="27145141749"><Description>Total Line Haul</Description>
+<EdiCode/>
+<Amount>805.00</Amount>
+<Rate>0.23</Rate>
+<RateQualifier>LB</RateQualifier>
+<Quantity>3500.0</Quantity>
+<Weight>3500.0</Weight>
+<DimWeight>0.0</DimWeight>
+<FreightClass>0.0</FreightClass>
+<FakFreightClass>0.0</FakFreightClass>
+<IsMin>false</IsMin>
+<IsMax>false</IsMax>
+<IsNontaxable>false</IsNontaxable>
+<ReferenceNumbers></ReferenceNumbers>
+</Charge>
+<Charge sequenceNum="2" type="DISCOUNT" itemGroupId="" internalId="27145141750"><Description>Discount</Description>
+<EdiCode>DSC</EdiCode>
+<Amount>-619.85</Amount>
+<Rate>77.00</Rate>
+<RateQualifier>PCT</RateQualifier>
+<Quantity/>
+<Weight>0.0</Weight>
+<DimWeight>0.0</DimWeight>
+<FreightClass>0.0</FreightClass>
+<FakFreightClass>0.0</FakFreightClass>
+<IsMin>false</IsMin>
+<IsMax>false</IsMax>
+<IsNontaxable>false</IsNontaxable>
+<ReferenceNumbers></ReferenceNumbers>
+</Charge>
+</Charges>
+<Comments/>
+</PriceSheet>
+<PriceSheet type="Charge" chargeModel="NORMALIZED_MANUAL" isSelected="false" isAllocated="false" currencyCode="USD" createDate="09/13/2019 15:11" updateDate="09/13/2019 15:11" internalId="27145141751" createBy="Ray.Deluca" updateBy="Ray.Deluca"><AccessorialTotal>0.00</AccessorialTotal>
+<SubTotal>0.00</SubTotal>
+<Total>0.00</Total>
+<ContractId>(25633566734,3023,0)</ContractId>
+<ContractName>Carrier Sample MG Carrier 4</ContractName>
+<Carrier internalId="25628079001"><CarrierId>(25628079001,3840,0)</CarrierId>
+<CarrierName>MG Carrier 4</CarrierName>
+<SCAC>MGC4</SCAC>
+<Mode>LTL</Mode>
+<Service>Standard</Service>
+<ServiceDays>0.0</ServiceDays>
+<Distance>279.67</Distance>
+<Id>2352355</Id>
+<MCNumber>2352355</MCNumber>
+<USDOT/>
+<InsuranceTypes><Insurance type="Cargo" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+<Insurance type="General" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+<Insurance type="Liability" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+</InsuranceTypes>
+<Address type="Carrier" isResidential="false" isPrimary="false" internalId="25628076609"><Owner>Carriergistics Sandbox</Owner>
+<CustomerAcctNum>CarSand</CustomerAcctNum>
+<LocationCode>LOC17</LocationCode>
+<Name>MG Carrier 4</Name>
+<AddrLine1>615 Miami Ave</AddrLine1>
+<AddrLine2/>
+<City>Kansas City</City>
+<StateProvince>KS</StateProvince>
+<PostalCode>66105</PostalCode>
+<CountryCode>US</CountryCode>
+<GeoLoc latDegrees="39081798" latDirection="N" longDegrees="94633598" longDirection="W"></GeoLoc>
+<Contacts><Contact type="" oid="25628076634"><Name>Contact</Name>
+<ContactMethods><ContactMethod sequenceNum="1" type="Phone">8005551212</ContactMethod>
+<ContactMethod sequenceNum="2" type="Email">contact@noemail.com</ContactMethod>
+</ContactMethods>
+</Contact>
+</Contacts>
+<Comments/>
+</Address>
+</Carrier>
+<ReasonCode/>
+<Status>Manual Quote</Status>
+<LaneID>Imlay city,MI to Portage,IN</LaneID>
+<Zone/>
+<RouteGuidePriority/>
+<CarrierLocationOid>25628076609</CarrierLocationOid>
+<OriginService/>
+<DestinationService/>
+<DimFactor>0.0</DimFactor>
+<DimWeight>0.0</DimWeight>
+<TotalWeight>3500.0</TotalWeight>
+<ChargeableWeight>3500.0</ChargeableWeight>
+<Charges></Charges>
+<Comments/>
+<QuoteInformation><QuoteNumber/>
+<QuoteBy>Contact</QuoteBy>
+<QuotePhone>8005551212</QuotePhone>
+<QuoteFax/>
+<QuoteEmail>contact@noemail.com</QuoteEmail>
+</QuoteInformation>
+</PriceSheet>
+<PriceSheet type="Vendor" chargeModel="NORMALIZED_MANUAL" isSelected="false" isAllocated="false" currencyCode="USD" createDate="09/13/2019 15:15" updateDate="09/13/2019 15:15" internalId="27145145996" createBy="Carriergistics4KWSID" updateBy="Carriergistics4KWSID" internalIdInvoice="27145145998"><Consolidation count="0"></Consolidation>
+<Weight type="pricesheet" uom="lb">3500.0</Weight>
+<Settlement><Queue/>
+<Total>0.00</Total>
+<ReasonCode/>
+<InvoiceNumber/>
+<Date type="invoice">09/13/2019 00:00</Date>
+<PaymentMethod>Prepaid</PaymentMethod>
+<Comments/>
+<Check/>
+</Settlement>
+<RemitTo></RemitTo>
+<InvoiceBillTo/>
+<ReferenceNumbers></ReferenceNumbers>
+<ReferenceNumbers type="priceSheet"></ReferenceNumbers>
+<Audits></Audits>
+<Activities><Activity type="Commission Invoice" createDate="09/13/2019 15:15" createBy="Carriergistics4KWSID" updateDate="09/13/2019 15:15" updateBy="Carriergistics4KWSID" internalId="27145146000"><ActivityID/>
+<Summary/>
+<Priority>Normal</Priority>
+<Required>false</Required>
+<Status>Pending</Status>
+<AssignedTo/>
+<PlannedDate>09/20/2019 19:15</PlannedDate>
+<PercentageComplete/>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+<Activity type="Ready to Extract" createDate="09/13/2019 15:15" createBy="Carriergistics4KWSID" updateDate="09/13/2019 15:15" updateBy="Carriergistics4KWSID" internalId="27145146002"><ActivityID/>
+<Summary/>
+<Priority>Normal</Priority>
+<Required>false</Required>
+<Status>Pending</Status>
+<AssignedTo/>
+<PlannedDate>09/20/2019 19:15</PlannedDate>
+<PercentageComplete/>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+<Activity type="Audit Vendor Invoice" createDate="09/13/2019 15:15" createBy="Carriergistics4KWSID" updateDate="09/13/2019 15:15" updateBy="Carriergistics4KWSID" internalId="27145146003"><ActivityID/>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Pending</Status>
+<AssignedTo/>
+<PlannedDate>09/13/2019 15:15</PlannedDate>
+<PercentageComplete/>
+<StatusDetails>Tolerance not checked due to no matching vendor rate|</StatusDetails>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+</Activities>
+<AccessorialTotal>0.00</AccessorialTotal>
+<SubTotal>10.74</SubTotal>
+<Total>10.74</Total>
+<NormalizedTotal currencyCode="USD">10.74</NormalizedTotal>
+<GLCode>Accounts Payable</GLCode>
+<ContractId/>
+<ContractName/>
+<Vendor type="Vendor" internalId="25625165096"><VendorId>(25625165096,3840,0)</VendorId>
+<VendorName>CommissionVendor1</VendorName>
+<ServiceDays>0.0</ServiceDays>
+<Distance>279.67</Distance>
+<Id>Planning</Id>
+<MCNumber/>
+<USDOT/>
+<InsuranceTypes><Insurance type="Cargo" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+<Insurance type="General" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+<Insurance type="Liability" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+</InsuranceTypes>
+</Vendor>
+<ReasonCode/>
+<Status/>
+<LaneID>Imlay city,MI to Portage,IN</LaneID>
+<Zone/>
+<RouteGuidePriority/>
+<CarrierLocationOid/>
+<OriginService/>
+<DestinationService/>
+<Charges><Charge sequenceNum="1" type="ITEM" itemGroupId="" internalId="27145145997"><Description>Total Line Haul</Description>
+<EdiCode/>
+<Amount>10.74</Amount>
+<Rate>10.74</Rate>
+<RateQualifier>FR</RateQualifier>
+<Quantity/>
+<Weight>0.0</Weight>
+<DimWeight>0.0</DimWeight>
+<FreightClass>0.0</FreightClass>
+<FakFreightClass>0.0</FakFreightClass>
+<IsMin>false</IsMin>
+<IsMax>false</IsMax>
+<IsNontaxable>false</IsNontaxable>
+<GLCode>Commissions</GLCode>
+<ReferenceNumbers></ReferenceNumbers>
+</Charge>
+</Charges>
+<Comments/>
+</PriceSheet>
+<PriceSheet type="Vendor" chargeModel="NORMALIZED_MANUAL" isSelected="false" isAllocated="false" currencyCode="USD" createDate="09/13/2019 15:15" updateDate="09/13/2019 15:15" internalId="27145146004" createBy="Carriergistics4KWSID" updateBy="Carriergistics4KWSID" internalIdInvoice="27145146006"><Consolidation count="0"></Consolidation>
+<Weight type="pricesheet" uom="lb">3500.0</Weight>
+<Settlement><Queue/>
+<Total>0.00</Total>
+<ReasonCode/>
+<InvoiceNumber/>
+<Date type="invoice">09/13/2019 00:00</Date>
+<PaymentMethod>Prepaid</PaymentMethod>
+<Comments/>
+<Check/>
+</Settlement>
+<RemitTo></RemitTo>
+<InvoiceBillTo/>
+<ReferenceNumbers></ReferenceNumbers>
+<ReferenceNumbers type="priceSheet"></ReferenceNumbers>
+<Audits></Audits>
+<Activities><Activity type="Commission Invoice" createDate="09/13/2019 15:15" createBy="Carriergistics4KWSID" updateDate="09/13/2019 15:15" updateBy="Carriergistics4KWSID" internalId="27145146007"><ActivityID/>
+<Summary/>
+<Priority>Normal</Priority>
+<Required>false</Required>
+<Status>Pending</Status>
+<AssignedTo/>
+<PlannedDate>09/20/2019 19:15</PlannedDate>
+<PercentageComplete/>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+<Activity type="Ready to Extract" createDate="09/13/2019 15:15" createBy="Carriergistics4KWSID" updateDate="09/13/2019 15:15" updateBy="Carriergistics4KWSID" internalId="27145146009"><ActivityID/>
+<Summary/>
+<Priority>Normal</Priority>
+<Required>false</Required>
+<Status>Pending</Status>
+<AssignedTo/>
+<PlannedDate>09/20/2019 19:15</PlannedDate>
+<PercentageComplete/>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+<Activity type="Audit Vendor Invoice" createDate="09/13/2019 15:15" createBy="Carriergistics4KWSID" updateDate="09/13/2019 15:15" updateBy="Carriergistics4KWSID" internalId="27145146010"><ActivityID/>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Pending</Status>
+<AssignedTo/>
+<PlannedDate>09/13/2019 15:15</PlannedDate>
+<PercentageComplete/>
+<StatusDetails>Tolerance not checked due to no matching vendor rate|</StatusDetails>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+</Activities>
+<AccessorialTotal>0.00</AccessorialTotal>
+<SubTotal>23.63</SubTotal>
+<Total>23.63</Total>
+<NormalizedTotal currencyCode="USD">23.63</NormalizedTotal>
+<GLCode>Accounts Payable</GLCode>
+<ContractId/>
+<ContractName/>
+<Vendor type="Vendor" internalId="25625166927"><VendorId>(25625166927,3840,0)</VendorId>
+<VendorName>CommissionVendor2</VendorName>
+<ServiceDays>0.0</ServiceDays>
+<Distance>279.67</Distance>
+<Id>Execution</Id>
+<MCNumber/>
+<USDOT/>
+<InsuranceTypes><Insurance type="Cargo" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+<Insurance type="General" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+<Insurance type="Liability" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+</InsuranceTypes>
+</Vendor>
+<ReasonCode/>
+<Status/>
+<LaneID>Imlay city,MI to Portage,IN</LaneID>
+<Zone/>
+<RouteGuidePriority/>
+<CarrierLocationOid/>
+<OriginService/>
+<DestinationService/>
+<Charges><Charge sequenceNum="1" type="ITEM" itemGroupId="" internalId="27145146005"><Description>Total Line Haul</Description>
+<EdiCode/>
+<Amount>23.63</Amount>
+<Rate>23.63</Rate>
+<RateQualifier>FR</RateQualifier>
+<Quantity/>
+<Weight>0.0</Weight>
+<DimWeight>0.0</DimWeight>
+<FreightClass>0.0</FreightClass>
+<FakFreightClass>0.0</FakFreightClass>
+<IsMin>false</IsMin>
+<IsMax>false</IsMax>
+<IsNontaxable>false</IsNontaxable>
+<GLCode>Commissions</GLCode>
+<ReferenceNumbers></ReferenceNumbers>
+</Charge>
+</Charges>
+<Comments/>
+</PriceSheet>
+<PriceSheet type="Billed" chargeModel="NORMALIZED_NON_SMC" isSelected="false" isAllocated="false" currencyCode="USD" createDate="09/13/2019 15:16" updateDate="09/13/2019 15:23" internalId="27145150633" createBy="Ray.Deluca" updateBy="Ray.Deluca" internalIdInvoice="27145150648"><Consolidation count="0"></Consolidation>
+<Weight type="pricesheet" uom="lb">3500.0</Weight>
+<Settlement><Queue>Approve</Queue>
+<Total>185.15</Total>
+<ReasonCode>Apr- Management Approved</ReasonCode>
+<InvoiceNumber>543</InvoiceNumber>
+<Date type="invoice">09/13/2019 00:00</Date>
+<PaymentMethod>Prepaid</PaymentMethod>
+<Comments/>
+<Check/>
+</Settlement>
+<RemitTo></RemitTo>
+<InvoiceBillTo/>
+<ReferenceNumbers></ReferenceNumbers>
+<ReferenceNumbers type="priceSheet"></ReferenceNumbers>
+<Audits><Audit timestamp="09/13/2019 15:24" user="" action="Extracted">AP13</Audit>
+</Audits>
+<Activities><Activity type="Audit Invoice" createDate="09/13/2019 15:16" createBy="Ray.Deluca" updateDate="09/13/2019 15:23" updateBy="Ray.Deluca" internalId="27145150676"><ActivityID/>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Complete</Status>
+<AssignedTo/>
+<PlannedDate>09/13/2019 15:16</PlannedDate>
+<PercentageComplete/>
+<CompletedDate>09/13/2019 15:23</CompletedDate>
+<StatusDetails>Services mismatch|</StatusDetails>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+<Activity type="Audit By Accounting" createDate="09/13/2019 15:23" createBy="Ray.Deluca" updateDate="09/13/2019 15:23" updateBy="Ray.Deluca" internalId="27145171111"><ActivityID/>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Complete</Status>
+<AssignedTo/>
+<PlannedDate>09/13/2019 15:23</PlannedDate>
+<PercentageComplete/>
+<CompletedDate>09/13/2019 15:23</CompletedDate>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+<Activity type="Approve Invoice" createDate="09/13/2019 15:23" createBy="Ray.Deluca" updateDate="09/13/2019 15:23" updateBy="Ray.Deluca" internalId="27145171735"><ActivityID/>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Complete</Status>
+<AssignedTo/>
+<PlannedDate>09/13/2019 15:23</PlannedDate>
+<PercentageComplete/>
+<CompletedDate>09/13/2019 15:23</CompletedDate>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+<Activity type="Ready to Extract" createDate="09/13/2019 15:23" createBy="Ray.Deluca" updateDate="09/13/2019 15:24" updateBy="Ray.Deluca" internalId="27145171736"><ActivityID/>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Complete</Status>
+<AssignedTo/>
+<PlannedDate>09/13/2019 15:23</PlannedDate>
+<PercentageComplete/>
+<CompletedDate>09/13/2019 15:24</CompletedDate>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+<Activity type="Historical" createDate="09/13/2019 15:24" createBy="Ray.Deluca" updateDate="09/13/2019 15:24" updateBy="Ray.Deluca" internalId="27145172653"><ActivityID/>
+<Summary/>
+<Priority>Normal</Priority>
+<Required>false</Required>
+<Status>Pending</Status>
+<AssignedTo/>
+<PlannedDate>09/15/2019 07:24</PlannedDate>
+<PercentageComplete/>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+</Activities>
+<AccessorialTotal>0.00</AccessorialTotal>
+<SubTotal>185.15</SubTotal>
+<Total>185.15</Total>
+<NormalizedTotal currencyCode="USD">185.15</NormalizedTotal>
+<GLCode>Accounts Payable</GLCode>
+<ContractId>(25633566734,3023,0)</ContractId>
+<ContractName>Carrier Sample MG Carrier 4</ContractName>
+<Carrier internalId="25628079001"><CarrierId>(25628079001,3840,0)</CarrierId>
+<CarrierName>MG Carrier 4</CarrierName>
+<SCAC>MGC4</SCAC>
+<Mode>LTL</Mode>
+<Service>Standard</Service>
+<ServiceDays>2.0</ServiceDays>
+<Distance>279.67</Distance>
+<Id>2352355</Id>
+<MCNumber>2352355</MCNumber>
+<USDOT/>
+<InsuranceTypes><Insurance type="Cargo" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+<Insurance type="General" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+<Insurance type="Liability" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+</InsuranceTypes>
+<Address type="Carrier" isResidential="false" isPrimary="false" internalId="25628076609"><Owner>Carriergistics Sandbox</Owner>
+<CustomerAcctNum>CarSand</CustomerAcctNum>
+<LocationCode>LOC17</LocationCode>
+<Name>MG Carrier 4</Name>
+<AddrLine1>615 Miami Ave</AddrLine1>
+<AddrLine2/>
+<City>Kansas City</City>
+<StateProvince>KS</StateProvince>
+<PostalCode>66105</PostalCode>
+<CountryCode>US</CountryCode>
+<GeoLoc latDegrees="39081798" latDirection="N" longDegrees="94633598" longDirection="W"></GeoLoc>
+<Contacts><Contact type="" oid="25628076634"><Name>Contact</Name>
+<ContactMethods><ContactMethod sequenceNum="1" type="Phone">8005551212</ContactMethod>
+<ContactMethod sequenceNum="2" type="Email">contact@noemail.com</ContactMethod>
+</ContactMethods>
+</Contact>
+</Contacts>
+<Comments/>
+</Address>
+</Carrier>
+<ReasonCode/>
+<Status/>
+<LaneID>Imlay city,MI to Portage,IN</LaneID>
+<Zone>US</Zone>
+<RouteGuidePriority/>
+<CarrierLocationOid>25628076609</CarrierLocationOid>
+<OriginService/>
+<DestinationService/>
+<DimFactor>0.0</DimFactor>
+<DimWeight>0.0</DimWeight>
+<ChargeableWeight>3500.0</ChargeableWeight>
+<Charges><Charge sequenceNum="1" type="ITEM" itemGroupId="" internalId="27145150634"><Description/>
+<EdiCode/>
+<Amount>805.00</Amount>
+<Rate>0.23</Rate>
+<RateQualifier>LB</RateQualifier>
+<Quantity>3500.0</Quantity>
+<Weight>0.0</Weight>
+<DimWeight>0.0</DimWeight>
+<FreightClass>0.0</FreightClass>
+<FakFreightClass>0.0</FakFreightClass>
+<IsMin>false</IsMin>
+<IsMax>false</IsMax>
+<IsNontaxable>false</IsNontaxable>
+<GLCode>Carrier Expense</GLCode>
+<ReferenceNumbers></ReferenceNumbers>
+</Charge>
+<Charge sequenceNum="2" type="DISCOUNT" itemGroupId="" internalId="27145150635"><Description>Discount</Description>
+<EdiCode>DSC</EdiCode>
+<Amount>-619.85</Amount>
+<Rate>77.00</Rate>
+<RateQualifier>PCT</RateQualifier>
+<Quantity>805.0</Quantity>
+<Weight>0.0</Weight>
+<DimWeight>0.0</DimWeight>
+<FreightClass>0.0</FreightClass>
+<FakFreightClass>0.0</FakFreightClass>
+<IsMin>false</IsMin>
+<IsMax>false</IsMax>
+<IsNontaxable>false</IsNontaxable>
+<GLCode>Carrier Expense</GLCode>
+<ReferenceNumbers></ReferenceNumbers>
+</Charge>
+</Charges>
+<Comments/>
+</PriceSheet>
+</PriceSheets>
+<Tenders><Tender user="Ray.Deluca" carrierSCAC="MGC4" method="email" date="09/13/2019 15:12"><TenderResponse carrierSCAC="MGC4" actioncode="A" date="09/13/2019 15:13"/>
+</Tender>
+</Tenders>
+<Activities><Activity type="Assign Carrier Rate" createDate="09/13/2019 15:06" createBy="Ray.Deluca" updateDate="09/13/2019 15:11" updateBy="Ray.Deluca" internalId="27145133983"><ActivityID>pd</ActivityID>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Complete</Status>
+<AssignedTo/>
+<PlannedDate>09/13/2019 18:11</PlannedDate>
+<PercentageComplete/>
+<CompletedDate>09/13/2019 15:11</CompletedDate>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+<Activity type="EL Extracted" createDate="09/13/2019 15:06" createBy="Ray.Deluca" updateDate="09/13/2019 16:01" updateBy="Carriergistics Report Writer" internalId="27145134007"><ActivityID/>
+<Summary/>
+<Priority>Normal</Priority>
+<Required>false</Required>
+<Status>Complete</Status>
+<AssignedTo/>
+<PlannedDate>09/13/2019 15:06</PlannedDate>
+<PercentageComplete/>
+<CompletedDate>09/13/2019 16:01</CompletedDate>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+<Activity type="Send Carrier Confirmation" createDate="09/13/2019 15:11" createBy="Ray.Deluca" updateDate="09/13/2019 15:12" updateBy="Ray.Deluca" internalId="27145141794"><ActivityID/>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Complete</Status>
+<AssignedTo/>
+<PlannedDate>09/13/2019 16:11</PlannedDate>
+<PercentageComplete/>
+<CompletedDate>09/13/2019 15:12</CompletedDate>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+<Activity type="Book" createDate="09/13/2019 15:12" createBy="Ray.Deluca" updateDate="09/13/2019 15:13" updateBy="Ray.Deluca" internalId="27145142753"><ActivityID/>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Complete</Status>
+<AssignedTo/>
+<PlannedDate>09/13/2019 17:12</PlannedDate>
+<PercentageComplete/>
+<CompletedDate>09/13/2019 15:13</CompletedDate>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+<Activity type="Dispatch" createDate="09/13/2019 15:13" createBy="Ray.Deluca" updateDate="09/13/2019 15:13" updateBy="Ray.Deluca" internalId="27145143776"><ActivityID/>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Complete</Status>
+<AssignedTo/>
+<PlannedDate>09/12/2019 07:00</PlannedDate>
+<PercentageComplete/>
+<CompletedDate>09/13/2019 15:13</CompletedDate>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+<Activity type="Validate Req Car Refs" createDate="09/13/2019 15:13" createBy="Ray.Deluca" updateDate="09/13/2019 15:22" updateBy="Ray.Deluca" internalId="27145143785"><ActivityID/>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Complete</Status>
+<AssignedTo/>
+<PlannedDate>09/18/2019 15:17</PlannedDate>
+<PercentageComplete/>
+<CompletedDate>09/13/2019 15:22</CompletedDate>
+<StatusDetails>PO Number</StatusDetails>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+<Activity type="Set Arrivals/Departures" createDate="09/13/2019 15:13" createBy="Ray.Deluca" updateDate="09/13/2019 15:15" updateBy="Carriergistics4KWSID" internalId="27145143788"><ActivityID>PD</ActivityID>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Complete</Status>
+<AssignedTo/>
+<PlannedDate>09/13/2019 06:00</PlannedDate>
+<PercentageComplete/>
+<CompletedDate>09/13/2019 15:15</CompletedDate>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+<Activity type="Validate Req Car Docs" createDate="09/13/2019 15:13" createBy="Ray.Deluca" updateDate="09/13/2019 15:21" updateBy="Ray.Deluca" internalId="27145143811"><ActivityID/>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Complete</Status>
+<AssignedTo/>
+<PlannedDate>09/18/2019 15:13</PlannedDate>
+<PercentageComplete/>
+<CompletedDate>09/13/2019 15:21</CompletedDate>
+<StatusDetails>BOL</StatusDetails>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+<Activity type="Validate Req Cust Docs" createDate="09/13/2019 15:13" createBy="Ray.Deluca" updateDate="09/13/2019 15:21" updateBy="Ray.Deluca" internalId="27145143812"><ActivityID/>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Complete</Status>
+<AssignedTo/>
+<PlannedDate>09/18/2019 15:13</PlannedDate>
+<PercentageComplete/>
+<CompletedDate>09/13/2019 15:21</CompletedDate>
+<StatusDetails>BOL</StatusDetails>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+<Activity type="FourKites Load Tracking" createDate="09/13/2019 15:13" createBy="Ray.Deluca" updateDate="09/13/2019 15:15" updateBy="Carriergistics4KWSID" internalId="27145143813"><ActivityID>Carrier does not exist</ActivityID>
+<Summary>Load Tracking with FourKites</Summary>
+<Priority/>
+<Required>false</Required>
+<Status>Failed to Start</Status>
+<AssignedTo/>
+<PlannedDate>09/13/2019 15:00</PlannedDate>
+<PercentageComplete/>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+<Activity type="Last Location" createDate="09/13/2019 15:14" createBy="Ray.Deluca" updateDate="09/13/2019 15:15" updateBy="Ray.Deluca" internalId="27145145609"><ActivityID>Portage, IN - Miles to Next Stop: 0.0</ActivityID>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Complete</Status>
+<AssignedTo/>
+<PlannedDate>09/13/2019 15:15</PlannedDate>
+<PercentageComplete/>
+<CompletedDate>09/13/2019 15:15</CompletedDate>
+<StatusDetails/>
+<Location><Address type="" isResidential="false" isPrimary="false" internalId=""><LocationCode/>
+<Name>Lear Corp Portage</Name>
+<AddrLine1>6675 Daniel Burnham DR</AddrLine1>
+<AddrLine2/>
+<City>Portage</City>
+<StateProvince>IN</StateProvince>
+<PostalCode>46368</PostalCode>
+<CountryCode>US</CountryCode>
+<GeoLoc/>
+<Contacts><Contact/>
+</Contacts>
+<Comments/>
+</Address>
+</Location>
+<Contact/>
+<Documents/>
+</Activity>
+<Activity type="Call Check" createDate="09/13/2019 15:14" createBy="Ray.Deluca" updateDate="09/13/2019 15:15" updateBy="Carriergistics4KWSID" internalId="27145145770"><ActivityID/>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Complete</Status>
+<AssignedTo/>
+<PlannedDate>09/13/2019 17:14</PlannedDate>
+<PercentageComplete/>
+<CompletedDate>09/13/2019 15:15</CompletedDate>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+<Activity type="Accrue Charges" createDate="09/13/2019 15:14" createBy="Ray.Deluca" updateDate="09/13/2019 15:14" updateBy="Ray.Deluca" internalId="27145145771"><ActivityID/>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Pending</Status>
+<AssignedTo/>
+<PlannedDate>09/20/2019 15:14</PlannedDate>
+<PercentageComplete/>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+<Activity type="Add POD" createDate="09/13/2019 15:15" createBy="Carriergistics4KWSID" updateDate="09/13/2019 15:16" updateBy="Ray.Deluca" internalId="27145146011"><ActivityID/>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Complete</Status>
+<AssignedTo>Ray.Deluca</AssignedTo>
+<PlannedDate>09/13/2019 17:15</PlannedDate>
+<PercentageComplete/>
+<CompletedDate>09/13/2019 15:16</CompletedDate>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+<Activity type="Enter Invoice" createDate="09/13/2019 15:16" createBy="Ray.Deluca" updateDate="09/13/2019 15:16" updateBy="Ray.Deluca" internalId="27145146412"><ActivityID/>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Complete</Status>
+<AssignedTo/>
+<PlannedDate>09/13/2019 17:16</PlannedDate>
+<PercentageComplete/>
+<CompletedDate>09/13/2019 15:16</CompletedDate>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+</Activities>
+<Links></Links>
+<Margins><Margin type="CurrentMargin" currencyCode="USD"><MarginRevenue>400.00</MarginRevenue>
+<MarginCost>185.15</MarginCost>
+<MarginValue>214.85</MarginValue>
+</Margin>
+<Margin type="InvoiceMargin" currencyCode="USD"><MarginRevenue>0.00</MarginRevenue>
+<MarginCost>185.15</MarginCost>
+<MarginValue>-185.15</MarginValue>
+</Margin>
+<Margin type="RateMargin" currencyCode="USD"><MarginRevenue>400.00</MarginRevenue>
+<MarginCost>185.15</MarginCost>
+<MarginValue>214.85</MarginValue>
+</Margin>
+</Margins>
+</MasterBillOfLading>
+</ExecutionLoads>
+<Weights><Weight type="actual" uom="lb">3500.0</Weight>
+<Weight type="planned" uom="lb">3500.0</Weight>
+<Weight type="ordered" uom="lb">3500.0</Weight>
+<Weight type="delivered" uom="lb">0.0</Weight>
+</Weights>
+<Dimensions><Dimension type="" dim="LinearFeet" uom="ft">0.0</Dimension>
+<Dimension type="" dim="RatingCount" uom="ct">0.0</Dimension>
+</Dimensions>
+<Quantities><Quantity type="actual">1.0</Quantity>
+<Quantity type="planned">1.0</Quantity>
+<Quantity type="ordered">1.0</Quantity>
+<Quantity type="delivered">0.0</Quantity>
+</Quantities>
+<Tenders></Tenders>
+<Activities><Activity type="Assign Customer Rate" createDate="09/13/2019 15:06" createBy="Ray.Deluca" updateDate="09/13/2019 15:09" updateBy="Ray.Deluca" internalId="27145133916"><ActivityID/>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Complete</Status>
+<AssignedTo/>
+<PlannedDate>09/13/2019 17:06</PlannedDate>
+<PercentageComplete/>
+<CompletedDate>09/13/2019 15:09</CompletedDate>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+<Activity type="Create Execution Load" createDate="09/13/2019 15:06" createBy="Ray.Deluca" updateDate="09/13/2019 15:06" updateBy="Ray.Deluca" internalId="27145133919"><ActivityID/>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Complete</Status>
+<AssignedTo/>
+<PlannedDate>09/13/2019 17:06</PlannedDate>
+<PercentageComplete/>
+<CompletedDate>09/13/2019 15:06</CompletedDate>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+<Activity type="Delivered" createDate="09/13/2019 15:15" createBy="Ray.Deluca" updateDate="09/13/2019 15:15" updateBy="Ray.Deluca" internalId="27145145994"><ActivityID/>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Pending</Status>
+<AssignedTo/>
+<PlannedDate>09/13/2019 15:15</PlannedDate>
+<PercentageComplete/>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+</Activities>
+<Links></Links>
+<Margins><Margin type="CurrentMargin" currencyCode="USD"><MarginRevenue>400.00</MarginRevenue>
+<MarginCost>185.15</MarginCost>
+<MarginValue>214.85</MarginValue>
+</Margin>
+<Margin type="InvoiceMargin" currencyCode="USD"><MarginRevenue>0.00</MarginRevenue>
+<MarginCost>185.15</MarginCost>
+<MarginValue>-185.15</MarginValue>
+</Margin>
+<Margin type="RateMargin" currencyCode="USD"><MarginRevenue>400.00</MarginRevenue>
+<MarginCost>185.15</MarginCost>
+<MarginValue>214.85</MarginValue>
+</Margin>
+</Margins>
+</MasterBillOfLading>
+</MercuryGate>
