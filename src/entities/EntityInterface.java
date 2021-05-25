@@ -187,6 +187,9 @@ public interface EntityInterface {
 	public List<ShipmentLineItemQuantities> getShipmentLineItemQuantities();
 	public void addShipmentLineItemQuantities(ShipmentLineItemQuantities sliq);
 	
+	public List<ShipmentLineItemDimensions> getShipmentLineItemDimensions();
+	public void addShipmentLineItemDimensions(ShipmentLineItemDimensions slid);
+	
 	public List<ShipmentPriceSheets> getShipmentPriceSheets();
 	public void addShipmentPriceSheets(ShipmentPriceSheets sps);
 	

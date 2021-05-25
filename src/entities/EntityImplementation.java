@@ -2007,6 +2007,51 @@ public class EntityImplementation implements EntityInterface{
 	}
 	
 	
+	@Override
+	public List<ShipmentLineItemDimensions> getShipmentLineItemDimensions()
+	{
+	List <ShipmentLineItemDimensions>  sLIDimensions = new ArrayList<ShipmentLineItemDimensions>();
+	Connection conn=SingletonConnection.getConnection();
+			try {
+				PreparedStatement ps= conn.prepareStatement("select * from ShipmentLineItemDimensions");
+				ResultSet rs= ps.executeQuery();
+				while(rs.next())
+					{
+					ShipmentLineItemDimensions slid= new ShipmentLineItemDimensions();
+						
+					slid.setDimension(rs.getString("Dimension"));
+					slid.setDim(rs.getString("dim"));
+					slid.setUom(rs.getString("uom"));
+					slid.setType(rs.getString("type"));
+					slid.setHarmonizedTariffCode(rs.getString("HarmonizedTariffCode"));
+					slid.setPortOfLading(rs.getString("PortOfLading"));
+					slid.setCountryOfOrigin(rs.getString("CountryOfOrigin"));
+					slid.setCountryOfManufacture(rs.getString("CountryOfManufacture"));
+					slid.setCustomsValue(rs.getString(" CustomsValue"));
+					slid.setCustomsValueCurrency(rs.getString("CustomsValueCurrency"));
+					slid.setInsuredValue(rs.getString("InsuredValue"));
+					slid.setInsuredValueCurrency(rs.getString("InsuredValueCurrency"));
+					slid.setAESExportCode (rs.getString("AESExportCode"));
+					slid.setScheduleBNumber(rs.getString("ScheduleBNumber"));
+					slid.setDomestic(rs.getString("Domestic"));
+					slid.setECCN(rs.getString("ECCN"));
+					slid.setOriginationCountry(rs.getString("OriginationCountry"));
+					slid.setManufacturingCountry(rs.getString("ManufacturingCountry"));
+					slid.setLicenseNumber(rs.getString("LicenseNumber"));
+					slid.setLicenseType(rs.getString("LicenseType"));
+					sLIDimensions.add(slid);
+					}
+					
+					ps.close(); 
+					conn.close();
+					
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+				
+			return sLIDimensions;
+	}
+	
 	
 	@Override
 	public List<ShipmentPriceSheets> getShipmentPriceSheets()
@@ -2479,10 +2524,7 @@ Connection conn=SingletonConnection.getConnection();
 			conn.close();
 		} catch (Exception e) {
 			e.printStackTrace();
-		}
-		
-		
-		
+		}	
 	}
 
 	@Override
@@ -2615,8 +2657,6 @@ Connection conn=SingletonConnection.getConnection();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}	
-		
-		
 	}
 
 	@Override
@@ -2644,7 +2684,7 @@ Connection conn=SingletonConnection.getConnection();
 	@Override
 	public void addLoadItemQuantities(LoadItemQuantities liq) {
 		
-Connection conn=SingletonConnection.getConnection();
+		Connection conn=SingletonConnection.getConnection();
 		
 		try {
 			PreparedStatement ps= conn.prepareStatement("insert into LoadItemQuantities(internalId,lineNumber,type,uom,Weight)values(?,?,?,?,?)");
@@ -2666,7 +2706,7 @@ Connection conn=SingletonConnection.getConnection();
 	@Override
 	public void addLoadLineItemDetails(LoadLineItemDetails llineid) {
 		
-Connection conn=SingletonConnection.getConnection();
+		Connection conn=SingletonConnection.getConnection();
 		
 		try {
 			PreparedStatement ps= conn.prepareStatement("insert into LoadLineItemDetails(ItemId,Description ,FreightClass,Commodity,NmfcCode"
@@ -2697,7 +2737,7 @@ Connection conn=SingletonConnection.getConnection();
 	@Override
 	public void addLoadExtraLineItemDetails(LoadExtraLineItemDetails leid) {
 		
-Connection conn=SingletonConnection.getConnection();
+		Connection conn=SingletonConnection.getConnection();
 		
 		try {
 			PreparedStatement ps= conn.prepareStatement("insert into LoadExtraLineItemDetails(HazMatDetail,ProperShippingName,HazMatID,PackageGroup,HazMatClass"
@@ -2728,7 +2768,7 @@ Connection conn=SingletonConnection.getConnection();
 	@Override
 	public void addLoadLineItemDimensions(LoadLineItemDimensions llid) {
 		
-Connection conn=SingletonConnection.getConnection();
+		Connection conn=SingletonConnection.getConnection();
 		
 		try {
 			PreparedStatement ps= conn.prepareStatement("insert into LoadLineItemDimensions(type,uom,dim,Dimension,HarmonizedTariffCode,PortOfLading"
@@ -2770,7 +2810,7 @@ Connection conn=SingletonConnection.getConnection();
 	@Override
 	public void addLoadPaymentMethod(LoadPaymentMethod lpm) {
 		
-Connection conn=SingletonConnection.getConnection();
+		Connection conn=SingletonConnection.getConnection();
 		
 		try {
 			PreparedStatement ps= conn.prepareStatement("insert into LoadPaymentMethod(Method,Contact,Comments)values(?,?,?)");
@@ -2790,7 +2830,7 @@ Connection conn=SingletonConnection.getConnection();
 	@Override
 	public void addLoadBillingAddress(LoadBillingAddress lba) {
 		
-Connection conn=SingletonConnection.getConnection();
+		Connection conn=SingletonConnection.getConnection();
 		
 		try {
 			PreparedStatement ps= conn.prepareStatement("insert into LoadBillingAddress(Method,Contact,Comments)values(?,?,?)");
@@ -2811,7 +2851,7 @@ Connection conn=SingletonConnection.getConnection();
 	@Override
 	public void addLoadGeoLocation(LoadGeoLocation lgl) {
 		
-Connection conn=SingletonConnection.getConnection();
+		Connection conn=SingletonConnection.getConnection();
 		
 		try {
 			PreparedStatement ps= conn.prepareStatement("INSERT INTO LoadGeoLocation(longDirection ,longDegrees, latDirection, latDegrees)VALUES(?,?,?,?)");
@@ -2833,7 +2873,7 @@ Connection conn=SingletonConnection.getConnection();
 	@Override
 	public void addLoadPODRecieved(LoadPODRecieved lpr) {
 		
-Connection conn=SingletonConnection.getConnection();
+		Connection conn=SingletonConnection.getConnection();
 		
 		try {
 			PreparedStatement ps= conn.prepareStatement("INSERT INTO LoadPODRecieved(PODReceived,ProofOfPickupReceived,Status,AssignedTo,Owner)VALUES(?,?,?,?,?)");
@@ -2850,14 +2890,12 @@ Connection conn=SingletonConnection.getConnection();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}		
-		
-		
 	}
 
 	@Override
 	public void addLoadAudits(LoadAudits la) {
 		
-Connection conn=SingletonConnection.getConnection();
+		Connection conn=SingletonConnection.getConnection();
 		
 		try {
 			PreparedStatement ps= conn.prepareStatement("INSERT INTO LoadAudits(action,user,timestamp,Audit)VALUES(?,?,?,?)");
@@ -2872,14 +2910,13 @@ Connection conn=SingletonConnection.getConnection();
 			conn.close();
 		} catch (Exception e) {
 			e.printStackTrace();
-		}		
-		
+		}			
 	}
 
 	@Override
 	public void addLoadCarriers(LoadCarriers lc) {
 		
-Connection conn=SingletonConnection.getConnection();
+		Connection conn=SingletonConnection.getConnection();
 		
 		try {
 			PreparedStatement ps= conn.prepareStatement("INSERT INTO LoadCarriers(internalId,type,CarrierId,CarrierName,SCAC,Mode,Service,ServiceDays"
@@ -2889,13 +2926,13 @@ Connection conn=SingletonConnection.getConnection();
 			ps.setString(2, lc.getType());
 			ps.setString(3, lc.getCarrierId());
 			ps.setString(4, lc.getCarrierName());
-			ps.setString(4, lc.getSCAC());
-			ps.setString(4, lc.getMode());
-			ps.setString(4, lc.getService());
-			ps.setString(4, lc.getServiceDays());
-			ps.setString(4, lc.getId());
-			ps.setString(4, lc.getMCNumber());
-			ps.setString(4, lc.getUSDOT());
+			ps.setString(5, lc.getSCAC());
+			ps.setString(6, lc.getMode());
+			ps.setString(7, lc.getService());
+			ps.setString(8, lc.getServiceDays());
+			ps.setString(9, lc.getId());
+			ps.setString(10, lc.getMCNumber());
+			ps.setString(11, lc.getUSDOT());
 			ps.executeUpdate();
 			
 			ps.close();
@@ -2909,7 +2946,7 @@ Connection conn=SingletonConnection.getConnection();
 	@Override
 	public void addLoadInsuranceType(LoadInsuranceType lit) {
 		
-Connection conn=SingletonConnection.getConnection();
+		Connection conn=SingletonConnection.getConnection();
 		
 		try {
 			PreparedStatement ps= conn.prepareStatement("INSERT INTO LoadInsuranceType(type,contactPhone,contactName,expirationDate,company,amount)VALUES(?,?,?,?,?,?)");
@@ -2932,7 +2969,7 @@ Connection conn=SingletonConnection.getConnection();
 	@Override
 	public void addLoadCarrierAddress(LoadCarrierAddress lca) {
 		
-Connection conn=SingletonConnection.getConnection();
+		Connection conn=SingletonConnection.getConnection();
 		
 		try {
 			PreparedStatement ps= conn.prepareStatement("INSERT INTO LoadCarrierAddress(internald,type,isPrimary,isResidential,Owner,CustomerAcctNum"
@@ -2965,7 +3002,7 @@ Connection conn=SingletonConnection.getConnection();
 	@Override
 	public void addLoadCarrierGeoLocation(LoadCarrierGeoLocation lcgl) {
 	
-Connection conn=SingletonConnection.getConnection();
+		Connection conn=SingletonConnection.getConnection();
 		
 		try {
 			PreparedStatement ps= conn.prepareStatement("INSERT INTO LoadCarrierGeoLocation(longDirection ,longDegrees, latDirection, latDegrees)VALUES(?,?,?,?)");
@@ -2987,7 +3024,7 @@ Connection conn=SingletonConnection.getConnection();
 	@Override
 	public void addLoadContacts(LoadContacts lco) {
 		
-Connection conn=SingletonConnection.getConnection();
+		Connection conn=SingletonConnection.getConnection();
 		
 		try {
 			PreparedStatement ps= conn.prepareStatement("INSERT INTO LoadContacts(oid,type,Name,ContactMethods)VALUES(?,?,?,?)");
@@ -3003,13 +3040,12 @@ Connection conn=SingletonConnection.getConnection();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}		
-		
 	}
 
 	@Override
 	public void addLoadCarrierTerminalInfo(LoadCarrierTerminalInfo lcti) {
 		
-Connection conn=SingletonConnection.getConnection();
+		Connection conn=SingletonConnection.getConnection();
 		
 		try {
 			PreparedStatement ps= conn.prepareStatement("INSERT INTO LoadCarrierTerminalInfo(TerminalType,Origin,Destination)VALUES(?,?,?)");
@@ -3030,7 +3066,7 @@ Connection conn=SingletonConnection.getConnection();
 	@Override
 	public void addLoadPickupDates(LoadPickupDates lpd) {
 		
-Connection conn=SingletonConnection.getConnection();
+		Connection conn=SingletonConnection.getConnection();
 		
 		try {
 			PreparedStatement ps= conn.prepareStatement("INSERT INTO LoadPickupDates(PickupType,Date/Time)VALUES(?,?)");
@@ -3050,7 +3086,7 @@ Connection conn=SingletonConnection.getConnection();
 	@Override
 	public void addLoadDropDates(LoadDropDates ldd) {
 		
-Connection conn=SingletonConnection.getConnection();
+		Connection conn=SingletonConnection.getConnection();
 		
 		try {
 			PreparedStatement ps= conn.prepareStatement("INSERT INTO LoadDropDate(DropOffType,Date/Time)VALUES(?,?)");
@@ -3070,7 +3106,7 @@ Connection conn=SingletonConnection.getConnection();
 	@Override
 	public void addLoadEventPlan(LoadEventPlan lep) {
 		
-Connection conn=SingletonConnection.getConnection();
+		Connection conn=SingletonConnection.getConnection();
 		
 		try {
 			PreparedStatement ps= conn.prepareStatement("insert into LoadEventPlan(internalId,sequenceNum,eventtype,CarrierActionCode,AppointmentNumber"
@@ -3093,13 +3129,12 @@ Connection conn=SingletonConnection.getConnection();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
 	}
 
 	@Override
 	public void addLoadEventAddress(LoadEventAddress lea) {
 		
-Connection conn=SingletonConnection.getConnection();
+		Connection conn=SingletonConnection.getConnection();
 		
 		try {
 			PreparedStatement ps= conn.prepareStatement("INSERT INTO LoadEventAddress(internald,type,isPrimary,isResidential,LocationCode,Name,"
@@ -3126,222 +3161,957 @@ Connection conn=SingletonConnection.getConnection();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}		
-		
 	}
 
 	@Override
 	public void addLoadEventWeights(LoadEventWeights lew) {
-		// TODO Auto-generated method stub
+		
+		Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("INSERT INTO LoadEventWeights(WeightType,uom,Weight)VALUES(?,?,?)");
+		
+			ps.setString(1, lew.getWeightType());
+			ps.setString(2, lew.getUom());
+			ps.setString(3, lew.getWeight());
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}		
 		
 	}
 
 	@Override
 	public void addLoadShipmentPlan(LoadShipmentPlan lsp) {
-		// TODO Auto-generated method stub
 		
+		Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("INSERT INTO LoadShipmentPlan(ReferenceNumber,type,internalId,isPrimary)VALUES(?,?,?,?)");
+		
+			ps.setString(1, lsp.getReferenceNumber());
+			ps.setString(2, lsp.getType());
+			ps.setString(3, lsp.getInternalId());
+			ps.setString(4, lsp.getIsPrimary());
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}		
 	}
 
 	@Override
 	public void addLoadEventActivities(LoadEventActivities leac) {
-		// TODO Auto-generated method stub
 		
+		Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("insert into LoadEventActivities(type,InternalId,createBy,updateDate,updateBy,createDate,createBy,"
+					+ "ActivityID,Summary,Priority,Required,Status,AssignedTo,PlannedDate,PercentageComplete,CompletedDate,TimeZone,StatusDetails)values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+			
+			ps.setString(1, leac.getType());
+			ps.setString(2, leac.getInternalId());
+			ps.setString(3, leac.getUpdateDate());
+			ps.setString(4, leac.getUpdateBy());
+			ps.setString(5, leac.getCreateDate());
+			ps.setString(6, leac.getCreateBy());
+			ps.setString(7, leac.getActivityID());
+			ps.setString(8, leac.getSummary());
+			ps.setString(9, leac.getPriority());
+			ps.setString(10, leac.getRequired());
+			ps.setString(11, leac.getStatus());
+			ps.setString(12, leac.getAssignedTo());
+			ps.setString(13, leac.getPlannedDate());
+			ps.setString(14, leac.getPercentageComplete());
+			ps.setString(15, leac.getCompletedDate());
+			ps.setString(16, leac.getTimeZone());
+			ps.setString(17, leac.getStatusDetails());
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}	
 	}
 
 	@Override
 	public void addLoadEventLocation(LoadEventLocation lel) {
-		// TODO Auto-generated method stub
 		
+		Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("INSERT INTO LoadEventLocation(type,internald,isPrimary,isResidential,"
+					+ "LocationCode,Name,AddrLine1,AddrLine2,City,StateProvince,PostalCode,CountryCode,Contact,Comments)VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+		
+			ps.setString(1, lel.getType());
+			ps.setString(2, lel.getInternalId());
+			ps.setString(3, lel.getIsPrimary());
+			ps.setString(4, lel.getIsResidential());
+			ps.setString(5, lel.getLocationCode());
+			ps.setString(6, lel.getName());
+			ps.setString(7, lel.getAddrLine1());
+			ps.setString(8, lel.getAddrLine2());
+			ps.setString(9, lel.getCity());
+			ps.setString(10, lel.getStateProvince());
+			ps.setString(11, lel.getPostalCode());
+			ps.setString(12, lel.getCountryCode());
+			ps.setString(13, lel.getContact());
+			ps.setString(14, lel.getComments());
+			ps.executeUpdate();
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}		
 	}
 
 	@Override
 	public void addLoadAddressGeoLoc(LoadAddressGeoLoc lac) {
-		// TODO Auto-generated method stub
 		
+		Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("INSERT INTO LoadAddressGeoLoc(longDirection ,longDegrees, latDirection, latDegrees)VALUES(?,?,?,?)");
+		
+			ps.setString(1, lac.getLongDirection());
+			ps.setString(2, lac.getLongDegrees());
+			ps.setString(3, lac.getLatDirection());
+			ps.setString(4, lac.getLatDegrees());
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}		
 	}
 
 	@Override
 	public void addShipments(Shipments sh) {
-		// TODO Auto-generated method stub
 		
+		Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("insert into Shipments(createBy,createDate,updateBy,updateDate,InternalId,type)VALUES(?,?,?,?,?,?)");
+			
+			ps.setString(6, sh.getCreateBy());
+			ps.setString(5, sh.getCreateDate());
+			ps.setString(4, sh.getUpdateBy());
+			ps.setString(3, sh.getUpdateDate());
+			ps.setString(2, sh.getInternalId());
+			ps.setString(1, sh.getType());				
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
 	public void addShipmentDetails(ShipmentDetails sd) {
-		// TODO Auto-generated method stub
 		
+		Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("insert into ShipmentDetails(createdBy,createDate,updateBy,updateDate,InternalId,type,"
+					+ "shipmentRefNumber,shipmentRefInternalId,shipmentRefIsPrimary,shipmentRefType)VALUES(?,?,?,?,?,?,?,?,?,?)");
+			
+			ps.setString(1, sd.getCreatedBy());
+			ps.setString(2, sd.getCreateDate());
+			ps.setString(3, sd.getUpdateBy());
+			ps.setString(4, sd.getUpdateDate());
+			ps.setString(5, sd.getInternalId());
+			ps.setString(6, sd.getType());
+			ps.setString(7, sd.getShipmentRefNumber());	
+			ps.setString(8, sd.getShipmentRefInternalId());	
+			ps.setString(9, sd.getShipmentRefIsPrimary ());	
+			ps.setString(10, sd.getShipmentRefType ());	
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
 	public void addExtraShipmentDetails(ExtraShipmentDetails esd) {
-		// TODO Auto-generated method stub
 		
+		Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("insert into ExtraShipmentDetails(Comments,Status,AssignedTo,Owner,Audits,QuoteDetail,"
+					+ " QuotedTo,QuotePhone,QuoteFax, QuoteEmail,QuoteDate, QuoteBy)VALUES(?,?,?,?,?,?,?,?,?,?,?,?)");
+			
+			ps.setString(1, esd.getComments());
+			ps.setString(2, esd.getStatus());
+			ps.setString(3, esd.getAssignedTo());
+			ps.setString(4, esd.getOwner());
+			ps.setString(5, esd.getAudits());
+			ps.setString(6, esd.getQuoteDetail());
+			ps.setString(7, esd.getQuotedTo());	
+			ps.setString(8, esd.getQuotePhone());	
+			ps.setString(9, esd.getQuoteFax());	
+			ps.setString(10, esd.getQuoteEmail());
+			ps.setString(11, esd.getQuoteDate());
+			ps.setString(12, esd.getQuoteBy());
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
 	public void addShipmentTerminalInfo(ShipmentTerminalInfo sti) {
-		// TODO Auto-generated method stub
 		
+		Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("insert into ShipmentTerminalInfo(TerminalType,Origin,Destination,EquipmentList,ScheduledEquipment)VALUES(?,?,?,?,?)");
+			
+			ps.setString(1, sti.getTerminalType());
+			ps.setString(2, sti.getOrigin());
+			ps.setString(3, sti.getDestination());
+			ps.setString(4, sti.getEquipmentList());
+			ps.setString(5, sti.getScheduledEquipment ());			
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}	
 	}
 
 	@Override
 	public void addShipmentQuantities(ShipmentQuantities sq) {
-		// TODO Auto-generated method stub
 		
+		Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("insert into ShipmentQuantities(type,uom,Quantity)VALUES(?,?,?)");
+			
+			ps.setString(1, sq.getType());
+			ps.setString(2, sq.getUom());
+			ps.setString(3, sq.getQuantity());			
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
 	public void addShipmentWeights(ShipmentWeights sw) {
-		// TODO Auto-generated method stub
+	
+		Connection conn=SingletonConnection.getConnection();
 		
+		try {
+			PreparedStatement ps= conn.prepareStatement("insert into ShipmentWeights(type,uom,Weight)VALUES(?,?,?)");
+			
+			ps.setString(1, sw.getType());
+			ps.setString(2, sw.getUom());
+			ps.setString(3, sw.getWeight());			
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
 	public void addShipmentDimensions(ShipmentDimensions sdim) {
-		// TODO Auto-generated method stub
 		
+		Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("insert into ShipmentDimensions(type,uom,dim,Dimension)VALUES(?,?,?,?)");
+			
+			ps.setString(1, sdim.getType());
+			ps.setString(2, sdim.getUom());
+			ps.setString(3, sdim.getDim());
+			ps.setString(4, sdim.getDimension());	
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
 	public void addShipmentPickupDate(ShipmentPickupDate spd) {
-		// TODO Auto-generated method stub
 		
+		Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("insert into ShipmentPickupDate(pickuptype,Date)VALUES(?,?)");
+			
+			ps.setString(1, spd.getPickuptype());
+			ps.setString(2, spd.getDate());	
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
 	public void addShipmentDropDate(ShipmentDropDate sdd) {
-		// TODO Auto-generated method stub
 		
+		Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("insert into ShipmentDropDate(droptype,Date,PriceSheets)VALUES(?,?,?)");
+			
+			ps.setString(1, sdd.getDroptype());
+			ps.setString(2, sdd.getDate());
+			ps.setString(3, sdd.getPriceSheets());	
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
 	public void addShipperAddress(ShipperAddress sa) {
-		// TODO Auto-generated method stub
 		
+		Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("INSERT INTO ShipperAddress(type,internald,isPrimary,isResidential,LocationCode,Name"
+					+ ",AddrLine1,AddrLine2,City,StateProvince,PostalCode,CountryCode,Contact,Comments)VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+		
+			ps.setString(1, sa.getType());
+			ps.setString(2, sa.getInternalId());
+			ps.setString(3, sa.getIsPrimary());
+			ps.setString(4, sa.getIsResidential());
+			ps.setString(5, sa.getLocationCode());
+			ps.setString(6, sa.getName());
+			ps.setString(7, sa.getAddrLine1());
+			ps.setString(8, sa.getAddrLine2());
+			ps.setString(9, sa.getCity());
+			ps.setString(10, sa.getStateProvince());
+			ps.setString(11, sa.getPostalCode());
+			ps.setString(12, sa.getCountryCode());
+			ps.setString(13, sa.getContact());
+			ps.setString(14, sa.getComments());
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}		
 	}
 
 	@Override
 	public void addShipperGeoLoc(ShipperGeoLoc sgl) {
-		// TODO Auto-generated method stub
 		
+		Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("INSERT INTO ShipperGeoLoc(longDirection ,longDegrees, latDirection, latDegrees)VALUES(?,?,?,?)");
+		
+			ps.setString(1, sgl.getLongDirection());
+			ps.setString(2, sgl.getLongDegrees());
+			ps.setString(3, sgl.getLatDirection());
+			ps.setString(4, sgl.getLatDegrees());
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}		
 	}
 
 	@Override
 	public void addShipmentConsigneeAddress(ShipmentConsigneeAddress sca) {
-		// TODO Auto-generated method stub
 		
+		Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("INSERT INTO ShipmentConsigneeAddress(type,internald,isPrimary,isResidential,LocationCode,Name"
+					+ ",AddrLine1,AddrLine2,City,StateProvince,PostalCode,CountryCode,Contact,Comments,Services)VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+		
+			ps.setString(1, sca.getType());
+			ps.setString(2, sca.getInternalId());
+			ps.setString(3, sca.getIsPrimary());
+			ps.setString(4, sca.getIsResidential());
+			ps.setString(5, sca.getLocationCode());
+			ps.setString(6, sca.getName());
+			ps.setString(7, sca.getAddrLine1());
+			ps.setString(8, sca.getAddrLine2());
+			ps.setString(9, sca.getCity());
+			ps.setString(10, sca.getStateProvince());
+			ps.setString(11, sca.getPostalCode());
+			ps.setString(12, sca.getCountryCode());
+			ps.setString(13, sca.getContact());
+			ps.setString(14, sca.getComments());
+			ps.setString(15, sca.getServices());
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}		
 	}
 
 	@Override
 	public void addShipmentConsigneeGeoLoc(ShipmentConsigneeGeoLoc scgl) {
-		// TODO Auto-generated method stub
 		
+		Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("INSERT INTO ShipmentConsigneeGeoLoc(longDirection ,longDegrees, latDirection, latDegrees)VALUES(?,?,?,?)");
+		
+			ps.setString(1, scgl.getLongDirection());
+			ps.setString(2, scgl.getLongDegrees());
+			ps.setString(3, scgl.getLatDirection());
+			ps.setString(4, scgl.getLatDegrees());
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}		
 	}
 
 	@Override
 	public void addShipmentConsigneePackageGeoLoc(ShipmentConsigneePackageGeoLoc scp) {
-		// TODO Auto-generated method stub
 		
+		Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("INSERT INTO ShipmentConsigneePackageGeoLoc(type,internald)VALUES(?,?)");
+		
+			ps.setString(1, scp.getType());
+			ps.setString(2, scp.getInternalId());
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}		
 	}
 
 	@Override
 	public void addShipmentPackageDimensions(ShipmentPackageDimensions spdim) {
-		// TODO Auto-generated method stub
 		
+		Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("insert into ShipmentPackageDimensions(type,uom,dim,Dimension)VALUES(?,?,?,?)");
+			
+			ps.setString(1, spdim.getType());
+			ps.setString(2, spdim.getUom());
+			ps.setString(3, spdim.getDim());
+			ps.setString(4, spdim.getDimension());	
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
 	public void addShipmentPackageWeight(ShipmentPackageWeight spw) {
-		// TODO Auto-generated method stub
 		
+		Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("insert into ShipmentPackageWeight(type,uom,Weight)VALUES(?,?,?)");
+			
+			ps.setString(1, spw.getType());
+			ps.setString(2, spw.getUom());
+			ps.setString(3, spw.getWeight());
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
 	public void addShipmentItemGroups(ShipmentItemGroups sig) {
-		// TODO Auto-generated method stub
 		
+		Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("insert into ShipmentItemGroups(internalId,sequence,isHandlingUnit,isShipUnit,Description,ContainmentId)values(?,?,?,?,?,?)");
+			
+			ps.setString(1, sig.getInternalId());
+			ps.setString(2, sig.getSequence());
+			ps.setString(3, sig.getIsHandlingUnit());
+			ps.setString(4, sig.getIsShipUnit());
+			ps.setString(5, sig.getDescription());
+			ps.setString(6, sig.getContainmentId());
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
 	public void addShipmentItemGroupWeights(ShipmentItemGroupWeights sigw) {
-		// TODO Auto-generated method stub
 		
+		Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("insert into ShipmentItemGroupWeights(type,uom,Weight)VALUES(?,?,?)");
+			
+			ps.setString(1, sigw.getType());
+			ps.setString(2, sigw.getUom());
+			ps.setString(3, sigw.getWeight());
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
 	public void addShipmentItemGroupQuantities(ShipmentItemGroupQuantities sigq) {
-		// TODO Auto-generated method stub
 		
+		Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("insert into ShipmentItemGroupQuantities(type,uom,Quantity)VALUES(?,?,?)");
+			
+			ps.setString(1, sigq.getType());
+			ps.setString(2, sigq.getUom());
+			ps.setString(3, sigq.getQuantity());
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
 	public void addShipmentItemGroupDimensions(ShipmentItemGroupDimensions sigd) {
-		// TODO Auto-generated method stub
 		
+		Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("insert into ShipmentItemGroupDimensions(type,uom,dim,Dimension)VALUES(?,?,?,?)");
+			
+			ps.setString(1, sigd.getType());
+			ps.setString(2, sigd.getUom());
+			ps.setString(3, sigd.getDim());
+			ps.setString(4, sigd.getDimension());	
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
 	public void addShipmentItemGroupFreightClass(ShipmentItemGroupFreightClass sigfc) {
-		// TODO Auto-generated method stub
 		
+		Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("insert into ShipmentItemGroupFreightClass(type,FreightClass, Stackability,TrackingNumber,DeliveryStatus,EquipmentRequired)values(?,?,?,?,?,?)");
+		
+			ps.setString(1, sigfc.getType());
+			ps.setString(2, sigfc.getFreightClass());
+			ps.setString(3, sigfc.getStackability());
+			ps.setString(4, sigfc.getTrackingNumber());
+			ps.setString(5, sigfc.getDeliveryStatus());
+			ps.setString(6, sigfc.getEquipmentRequired());
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}	
 	}
 
 	@Override
 	public void addShipmentLineItemNumberAndWeights(ShipmentLineItemNumberAndWeights slinw) {
-		// TODO Auto-generated method stub
+	
+Connection conn=SingletonConnection.getConnection();
 		
+		try {
+			PreparedStatement ps= conn.prepareStatement("insert into ShipmentLineItemNumberAndWeights(lineNumber,internalId,type,uom,Weight)values(?,?,?,?,?)");
+					
+			ps.setString(1, slinw.getLineNumber());
+			ps.setString(2, slinw.getInternalId());
+			ps.setString(3, slinw.getType());
+			ps.setString(4, slinw.getUom());
+			ps.setString(5, slinw.getWeight());
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}		
 	}
 
 	@Override
 	public void addShipmentLineItemQuantities(ShipmentLineItemQuantities sliq) {
-		// TODO Auto-generated method stub
 		
+Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("insert into ShipmentLineItemQuantities(Quantity,uom,type,ItemId,Description ,FreightClass,Commodity,NmfcCode,StccCode,"
+					+"CustomerPartNum,ManufacturerPartNum,DistributorPartNum,Cube,TemperatureRange,HazardousMaterial,internalId,HazMatDetail,ProperShippingName,HazMatID,PackageGroup, HazMatClass,"
+					+"ContactName,ContactPhone,HazMatPlacards,HazMatPlacardsDetails,HazMatEMSNumber,HazMatFlashPointTemp,Comments)values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+			
+			ps.setString(1, sliq.getQuantity());
+			ps.setString(2, sliq.getUom());
+			ps.setString(3, sliq.getType());		
+			ps.setString(4, sliq.getItemId());
+			ps.setString(5, sliq.getDescription());
+			ps.setString(6, sliq.getFreightClass());
+			ps.setString(7, sliq.getCommodity());
+			ps.setString(8, sliq.getNmfcCode());
+			ps.setString(9, sliq.getStccCode());
+			ps.setString(10, sliq.getCustomerPartNum());
+			ps.setString(11, sliq.getManufacturerPartNum());
+			ps.setString(12, sliq.getDistributorPartNum());
+			ps.setString(13, sliq.getCube());
+			ps.setString(14, sliq.getTemperatureRange());
+			ps.setString(15, sliq.getHazardousMaterial());
+			ps.setString(16, sliq.getInternalId());
+			ps.setString(17, sliq.getHazMatDetail());
+			ps.setString(18, sliq.getProperShippingName());
+			ps.setString(19, sliq.getHazMatID());
+			ps.setString(20, sliq.getPackageGroup());
+			ps.setString(21, sliq.getHazMatClass());
+			ps.setString(22, sliq.getContactName());
+			ps.setString(23, sliq.getContactPhone());
+			ps.setString(24, sliq.getHazMatPlacards());
+			ps.setString(25, sliq.getHazMatPlacardsDetails());
+			ps.setString(26, sliq.getHazMatEMSNumber());
+			ps.setString(27, sliq.getHazMatFlashPointTemp());
+			ps.setString(28, sliq.getComments());
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}				
+	}
+	
+	
+	@Override
+	public void addShipmentLineItemDimensions(ShipmentLineItemDimensions slid) {
+		
+Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("insert into ShipmentLineItemDimensions(Dimension,dim,uom,type, HarmonizedTariffCode,PortOfLading,"
+					+ "CountryOfOrigin,CountryOfManufacture,CustomsValue,CustomsValueCurrency,InsuredValue,InsuredValueCurrency, AESExportCode,ScheduleBNumber,"
+					+ "Domestic,ECCN,OriginationCountry,ManufacturingCountry,LicenseNumber,LicenseType)VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+			
+			ps.setString(1, slid.getDimension());
+			ps.setString(2, slid.getDim());
+			ps.setString(3, slid.getUom());
+			ps.setString(4, slid.getType());
+			ps.setString(5, slid.getHarmonizedTariffCode());
+			ps.setString(6, slid.getPortOfLading());
+			ps.setString(7, slid.getCountryOfOrigin());
+			ps.setString(8, slid.getCountryOfManufacture());
+			ps.setString(9, slid.getCustomsValue());
+			ps.setString(10, slid.getCustomsValueCurrency ());
+			ps.setString(11, slid.getInsuredValue());
+			ps.setString(12, slid.getInsuredValueCurrency());
+			ps.setString(13, slid.getAESExportCode());
+			ps.setString(14, slid.getScheduleBNumber());
+			ps.setString(15, slid.getDomestic());
+			ps.setString(16, slid.getECCN());
+			ps.setString(17, slid.getOriginationCountry());
+			ps.setString(18, slid.getManufacturingCountry());
+			ps.setString(19, slid.getLicenseNumber ());
+			ps.setString(20, slid.getLicenseType ());
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
 	public void addShipmentPriceSheets(ShipmentPriceSheets sps) {
-		// TODO Auto-generated method stub
 		
+Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("insert into ShipmentPriceSheets(chargeModel,isSelected,isAllocated,currencyCode,exchangeDate,createBy,"
+					+"createDate,updateBy,updateDate,internalId,type,AccessorialTotal,SubTotal,NormalizedTotal,ContractId,ContractName)VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+			
+			ps.setString(1, sps.getChargeModel());
+			ps.setString(2, sps.getIsSelected());
+			ps.setString(3, sps.getIsAllocated());
+			ps.setString(4, sps.getCurrencyCode());
+			ps.setString(5, sps.getExchangeDate());
+			ps.setString(6, sps.getCreateBy());
+			ps.setString(7, sps.getCreateDate());
+			ps.setString(8, sps.getUpdateBy());
+			ps.setString(9, sps.getUpdateDate());
+			ps.setString(10, sps.getInternalId());
+			ps.setString(11, sps.getType());
+			ps.setString(12, sps.getAccessorialTotal());
+			ps.setString(13, sps.getSubTotal());
+			ps.setString(14, sps.getNormalizedTotal());
+			ps.setString(15, sps.getContractId());
+			ps.setString(16, sps.getContractName());
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
 	public void addShipmentCarrierInfo(ShipmentCarrierInfo sci) {
-		// TODO Auto-generated method stub
 		
+Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("INSERT INTO ShipmentCarrierInfo(internalId,CarrierId,CarrierName,SCAC,Mode,Service,ServiceDays"
+					+ "Distance,Id,MCNumber,USDOT)VALUES(?,?,?,?,?,?,?,?,?,?,?)");
+		
+			ps.setString(1, sci.getInternalId());
+			ps.setString(2, sci.getCarrierId());
+			ps.setString(3, sci.getCarrierName());
+			ps.setString(4, sci.getSCAC());
+			ps.setString(5, sci.getMode());
+			ps.setString(6, sci.getService());
+			ps.setString(7, sci.getServiceDays());
+			ps.setString(8, sci.getDistance());
+			ps.setString(9, sci.getId());
+			ps.setString(10, sci.getMCNumber());
+			ps.setString(11, sci.getUSDOT());
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}		
 	}
 
 	@Override
 	public void addShipmentInsuranceTypes(ShipmentInsuranceTypes sit) {
-		// TODO Auto-generated method stub
 		
+Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("INSERT INTO ShipmentInsuranceTypes(amount,company,expirationDate,contactName,contactPhone,type)VALUES(?,?,?,?,?,?)");
+		
+			ps.setString(1, sit.getAmount());
+			ps.setString(2, sit.getCompany());
+			ps.setString(3, sit.getExpirationDate ());
+			ps.setString(4, sit.getContactName());
+			ps.setString(5, sit.getContactPhone());
+			ps.setString(6, sit.getType());	
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}		
 	}
 
 	@Override
 	public void addShipmentCarrierAddress(ShipmentCarrierAddress sca) {
-		// TODO Auto-generated method stub
 		
+Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("INSERT INTO ShipmentCarrierAddress(internald,type,isPrimary,isResidential,Owner,CustomerAcctNum"
+					+ "LocationCode,Name,AddrLine1,AddrLine2,City,StateProvince,PostalCode,CountryCode,Contacts)VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+		
+			ps.setString(1, sca.getInternalId());
+			ps.setString(2, sca.getType());
+			ps.setString(3, sca.getIsPrimary());
+			ps.setString(4, sca.getIsResidential());
+			ps.setString(5, sca.getOwner());
+			ps.setString(6, sca.getCustomerAcctNum());
+			ps.setString(7, sca.getLocationCode());
+			ps.setString(8, sca.getName());
+			ps.setString(9, sca.getAddrLine1());
+			ps.setString(10, sca.getAddrLine2());
+			ps.setString(11, sca.getCity());
+			ps.setString(12, sca.getStateProvince());
+			ps.setString(13, sca.getPostalCode());
+			ps.setString(14, sca.getCountryCode());
+			ps.setString(15, sca.getContacts());
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}		
 	}
 
 	@Override
 	public void addShipmentInsuranceGeoloc(ShipmentInsuranceGeoloc sigl) {
-		// TODO Auto-generated method stub
 		
+Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("INSERT INTO ShipmentInsuranceGeoloc(longDirection ,longDegrees, latDirection, latDegrees)VALUES(?,?,?,?)");
+		
+			ps.setString(1, sigl.getLongDirection());
+			ps.setString(2, sigl.getLongDegrees());
+			ps.setString(3, sigl.getLatDirection());
+			ps.setString(4, sigl.getLatDegrees());
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}		
 	}
 
 	@Override
 	public void addShipmentPriceSheetCharges(ShipmentPriceSheetCharges spsc) {
-		// TODO Auto-generated method stub
 		
+Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("INSERT INTO ShipmentPriceSheetCharges(itemGroupId,sequenceNum,internalId,type,Description,EdiCode,Amount,"
+					+ "Rate,RateQualifier,Quantity,Weight,DimWeight,FreightClass,IsMin,IsMax,IsNontaxable,Comments)VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+		
+			ps.setString(1, spsc.getItemGroupId());
+			ps.setString(2, spsc.getSequenceNum());
+			ps.setString(3, spsc.getInternalId());
+			ps.setString(4, spsc.getType());
+			ps.setString(4, spsc.getDescription());
+			ps.setString(4, spsc.getEdiCode());
+			ps.setString(4, spsc.getAmount());
+			ps.setString(4, spsc.getRate());
+			ps.setString(4, spsc.getRateQualifier());
+			ps.setString(4, spsc.getQuantity());
+			ps.setString(4, spsc.getWeight());
+			ps.setString(4, spsc.getDimWeight());
+			ps.setString(4, spsc.getFreightClass());
+			ps.setString(4, spsc.getFakFreightClass());
+			ps.setString(4, spsc.getIsMin());
+			ps.setString(4, spsc.getIsMax());
+			ps.setString(4, spsc.getIsNontaxable());
+			ps.setString(4, spsc.getComments());
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}		
 	}
 
 	@Override
 	public void addShipmentActivities(ShipmentActivities shac) {
-		// TODO Auto-generated method stub
 		
+Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("insert into ShipmentActivities(type,InternalId,createBy,updateDate,updateBy,createDate,createBy,"
+					+ "ActivityID,Summary,Priority,Required,Status,AssignedTo,PlannedDate,PercentageComplete,StatusDetails,Location,Contact,Comments)values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+			
+			ps.setString(1, shac.getType());
+			ps.setString(2, shac.getInternalId());
+			ps.setString(3, shac.getUpdateDate());
+			ps.setString(4, shac.getUpdateBy());
+			ps.setString(5, shac.getCreateDate());
+			ps.setString(6, shac.getCreateBy());
+			ps.setString(7, shac.getActivityID());
+			ps.setString(8, shac.getSummary());
+			ps.setString(9, shac.getPriority());
+			ps.setString(10, shac.getRequired());
+			ps.setString(11, shac.getStatus());
+			ps.setString(12, shac.getAssignedTo());
+			ps.setString(13, shac.getPlannedDate());
+			ps.setString(14, shac.getPercentageComplete());
+			ps.setString(15, shac.getStatusDetails());
+			ps.setString(16, shac.getLocation());
+			ps.setString(17, shac.getContact());
+			ps.setString(18, shac.getDocuments());
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
 	public void addShipmentMargins(ShipmentMargins sm) {
-		// TODO Auto-generated method stub
+		
+Connection conn=SingletonConnection.getConnection();
+		
+		try {
+			PreparedStatement ps= conn.prepareStatement("insert into ShipmentMargins(type,currencyCode,MarginRevenue,MarginCost,MarginValue)values(?,?,?,?,?)");
+					
+			ps.setString(1, sm.getType());
+			ps.setString(2, sm.getCurrencyCode());
+			ps.setString(3, sm.getMarginRevenue());
+			ps.setString(4, sm.getMarginCost());
+			ps.setString(5, sm.getMarginValue());
+			ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}		
 		
 	}
 
