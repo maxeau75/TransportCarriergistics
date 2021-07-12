@@ -27,5 +27,6 @@ public class ExtractRequestInfo implements Serializable {
 		super();
 		
 	}
+	
 
 }

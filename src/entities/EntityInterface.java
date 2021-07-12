@@ -1,10 +1,12 @@
 package entities;
 
+import java.io.File;
 import java.util.List;
 
 public interface EntityInterface {
 	
-	public List<HeaderDetails> getHeaderDetailsByKeyword(String kw);
+	
+	public List<HeaderDetails> getHeaderDetails();
 	public void addHeaderDetails(HeaderDetails hd);
 	
 	public List<ExtractRequestInfo> getExtractRequestInfo();
@@ -213,20 +215,7 @@ public interface EntityInterface {
 	
 	public List<ShipmentMargins> getShipmentMargins();
 	public void addShipmentMargins(ShipmentMargins sm);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
+	
 
 }

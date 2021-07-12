@@ -1,6 +1,9 @@
 package dbconnection;
 
+import java.io.File;
+import java.io.FileReader;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -76,12 +79,17 @@ import entities.ShipperGeoLoc;
 import entities.UserDetails;
 
 public class Test {
+	//static EntityImplementation hd = null;
 
 	public static void main(String[] args) {
 		
-		Connection conn= SingletonConnection.getConnection();
+	Connection conn= SingletonConnection.getConnection();
 	EntityImplementation entities= new EntityImplementation();
-	/*List <HeaderDetails> headerdetails = entities.getHeaderDetailsByKeyword("kw");
+	
+	
+	try {
+	
+	/*List <HeaderDetails> headerdetails = entities.getHeaderDetails();
 	for(HeaderDetails hd:headerdetails)
 	{
 		System.out.println(hd.getSenderID());
@@ -97,12 +105,12 @@ public class Test {
 	}*/
 	
 	
-	/*List <ExtractRequestInfo>  exreqinf= entities.getExtractRequestInfo();
+	List <ExtractRequestInfo>  exreqinf= entities.getExtractRequestInfo();
 	for(ExtractRequestInfo erif:exreqinf)
 	{
 		System.out.println(erif.getReason());
 		System.out.println(erif.getDate());
-	}*/
+	}
 	
 	
 	
@@ -691,8 +699,15 @@ public class Test {
 	}*/
 	
 	//entities.addExtractRequestInfo(new ExtractRequestInfo("01/30/2021 21:45", "Manual Extract From FreightBill List Screen"));
-	entities.addExtractRequestInfo(new ExtractRequestInfo("03/05/2021 09:38", "Manual Extract From MBL List Screen"));
+	//entities.addExtractRequestInfo(new ExtractRequestInfo("03/05/2021 09:38", "Manual Extract From MBL List Screen"));
 	
 	}
+	catch(Exception e)
+		{
+			e.printStackTrace();
+			//System.out.println();
+		}
+
+}
 
 }

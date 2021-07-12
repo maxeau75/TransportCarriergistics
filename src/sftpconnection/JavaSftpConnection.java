@@ -1,7 +1,19 @@
 package sftpconnection;
 
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.nio.file.DirectoryNotEmptyException;
 import java.nio.file.Files;
+import java.nio.file.NoSuchFileException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.util.AbstractCollection;
 import java.util.Collection;
 import java.util.Dictionary;
@@ -13,12 +25,15 @@ import com.jcraft.jsch.ChannelSftp;
 import com.jcraft.jsch.ChannelSftp.LsEntry;
 import com.jcraft.jsch.JSch;
 import com.jcraft.jsch.Session;
+import com.jcraft.jsch.SftpATTRS;
+import com.jcraft.jsch.SftpException;
+
 import entities.EntityImplementation;
 
-public class JavaSftpConnection extends EntityImplementation {
-	
-
-	public static void main(String[] args) {
+public class JavaSftpConnection {
+        
+	public static void main(String[] args) throws SftpException, IOException {
+		
 		
 		try
 		{
@@ -39,70 +54,48 @@ public class JavaSftpConnection extends EntityImplementation {
 		ChannelSftp channelSftp = (ChannelSftp) session.openChannel("sftp");
 		//System.out.println("Session connected:" + session.isConnected());
 		//Upload files using vertor
+		
+		
 		channelSftp.connect();
 		channelSftp = (ChannelSftp)channelSftp;
 		
 		@SuppressWarnings("unchecked")
-		Vector<LsEntry> fileList =channelSftp.ls("inboundFiles/");
+		Vector<LsEntry> fileList =channelSftp.ls("/");
+		//if (fileList != null && !fileList.isEmpty())
+		//{
 		for(int i=0; i<fileList.size(); i++)
 		{
 			ChannelSftp.LsEntry lsEntry = (ChannelSftp.LsEntry) fileList.get(i);
 			System.out.println(lsEntry.getFilename());
+			//channelSftp.copy(lsEntry.getFilename(),"inputFiles");
+		
+		
 		//}
-		
-		
-		//channelSftp.get("inboundFiles/CarrierInv-Carriergistics-27890825181.xml", "inputFiles/CarrierInv-Carriergistics-27890825181.xml");
-		//channelSftp.get("inboundFiles/CustomerInv-Carriergistics-27956653714.xml", "inputFiles/CustomerInv-Carriergistics-27956653714.xml");
-		
-		//channelsftp.cd(type); // Change Directory on SFTP Server
-        //channelsftp.rm("latest.xml"); // This method removes the file from remote server
-	
-		
-					//LsEntry lsEntry = null;
 			
+		            
+			//channelSftp.get("/CarrierInv-Carriergistics*", "inputFiles/CarrierInv-Carriergistics");
 			
-					if (fileList != null && !fileList.isEmpty())
+			//channelSftp.get("/CarrierInv-Carriergistics", "inputFiles/CarrierInv-Carriergistics");
+			//Thread.sleep(10000);
+			
+					 if(fileList != null && !fileList.isEmpty())
 					{
-						for(LsEntry files:fileList) {
-							
-							if(files !=null) {
 						
-								String fileNameToget= files.getFilename();
-						//String fileNameToget= lsEntry.getFilename();
-						if(fileNameToget.startsWith("Transport-Carriergistics") || fileNameToget.startsWith("CustomerInv-Carriergistics") || fileNameToget.startsWith("CarrierInv-Carriergistics"))
+						for(LsEntry files:fileList) {
+							String fileNameToget= files.getFilename();
+							
+						if(fileNameToget.contains("Transport-Carriergistics") || fileNameToget.contains("CustomerInv-Carriergistics") || fileNameToget.contains("CarrierInv-Carriergistics"))
 						{
 							continue;
-						}
-						
-						//channelSftp.get(fileNameToget);
-						
-						/*String fileName=lsEntry.getFilename();
-						String filePath= lsEntry.getFilename();
-						//if(fileName.startsWith("Transport-Carriergistics"))
-						//{
-							continue;
-							//ChannelSftp channelsftp1;
-							channelSftp.get("/" +filePath, "/" +fileName);
-							channelSftp.get( "/" +fileName);
-							System.out.println(lsEntry.getFilename());*/
-						}
-						
-						//ChannelSftp channelsftp1;
-						//channelsftp.get("/" +filePath, "/" +fileName);
-						//channelsftp.get( "/" +fileName);*/
-						//System.out.println(lsEntry.getFilename());
-						
-					//channelsftp.get(src="inboundFiles/", dst="Transport-Carriergistics-27970968447.xml");	
-						
-							//channelsftp.get("/" +filePath, "/" +fileName);
-							//channelsftp.get( "/" +fileName);
-							//System.out.println(lsEntry.getFilename());
 							
-							//String fileName= lsEntry.getFilename();
-							//Change Directory on SFTP Server
-							//channelsftp.cd(dst); 
-							//Remove the file from remote server
-					        //channelsftp.rm("latest.xml"); 
+						}
+						
+						
+						
+						}
+						
+					}
+						 
 				
 
 		//String newpath;
@@ -113,36 +106,38 @@ public class JavaSftpConnection extends EntityImplementation {
 		
 	
 		//channelsftp.get(src="inboundFiles/newFile2.txt", dst="newFile2.txt");
-		//channelSftp.get("inboundFiles/Transport-Carriergistics-27970968447.xml", "Transport-Carriergistics-27970968447.xml");
+		//channelSftp.get("/", "inputFiles/");
 		//channelSftp.get("inboundFiles/Transport-Carriergistics-27882433266.xml", "Transport-Carriergistics-27882433266.xml");
-		
-	
+			        
+			 
 		System.out.println("Session Connected:" +session.isConnected());
 		channelSftp.disconnect();
 		session.disconnect();
-		
-						}
-		}
-		
-		}
-		 } catch (Exception ex) {
+					            		
+					}					 
+		}	
+		catch(Exception ex) {
 	            ex.printStackTrace();
-		 }
-	
+		 
+		}  
 		
 	
 }
-
-
+	        
 }
-	
-	
-
 		
 
-	
-	
 
+
+		        
+			
+		 
+	
+		         
+
+			 
+
+	
 
 
 

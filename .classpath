@@ -9,5 +9,7 @@
 	<classpathentry kind="lib" path="C:/Users/maxea/Downloads/commons-dbutils-1.7-bin/commons-dbutils-1.7/commons-dbutils-1.7-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/maxea/Downloads/commons-dbutils-1.7-bin/commons-dbutils-1.7/commons-dbutils-1.7-tests.jar"/>
 	<classpathentry kind="lib" path="C:/Users/maxea/Downloads/commons-dbutils-1.7-bin/commons-dbutils-1.7/commons-dbutils-1.7-test-sources.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

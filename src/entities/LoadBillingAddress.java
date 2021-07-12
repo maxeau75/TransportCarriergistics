@@ -1,6 +1,10 @@
 package entities;
 
-public class LoadBillingAddress {
+import java.io.Serializable;
+
+import javax.xml.bind.annotation.XmlRootElement;
+
+public class LoadBillingAddress implements Serializable {
 	
 	 private String internalId;
 	 private String type;
@@ -123,8 +127,6 @@ public class LoadBillingAddress {
 	}
 	public void setCountryCode(String countryCode) {
 		CountryCode = countryCode;
-	}
-	 
-	 
+	} 
 
 }

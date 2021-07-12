@@ -22,8 +22,8 @@ import entities.HeaderDetails;
 
 public class SwingApplication extends JFrame {
 	
-	private JLabel jLabelKW = new JLabel("Key Word:");
-	private JTextField jTextFieldKW= new  JTextField(12);
+	private JLabel jLabel = new JLabel();
+	private JTextField jTextField= new  JTextField(12);
 	private JButton jButtonSearch= new JButton("Search");
 	private JTable jTableHeaderDetails= new JTable();
 	private GraphUserInterface jtableModel;
@@ -36,8 +36,8 @@ public class SwingApplication extends JFrame {
 		this.setLayout(new BorderLayout());
 		JPanel jPanelN= new JPanel();
 		jPanelN.setLayout(new FlowLayout());
-		jPanelN.add(jLabelKW);
-		jPanelN.add(jTextFieldKW);
+		jPanelN.add(jLabel);
+		jPanelN.add(jTextField);
 		jPanelN.add(jButtonSearch);
 		this.add(jPanelN, BorderLayout.NORTH);
 		
@@ -58,14 +58,11 @@ public class SwingApplication extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e)
 			{
-				String kw= jTextFieldKW.getText();
+				String kw= jTextField.getText();
 				EntityImplementation entities= new EntityImplementation();
-				List<HeaderDetails> hdetails= entities.getHeaderDetailsByKeyword(kw);
+				List<HeaderDetails> hdetails= entities.getHeaderDetails();
 				jtableModel.setData(hdetails);
 				
-				/*EntityImplementation entities1= new EntityImplementation();
-				List<ExtractRequestInfo> extractinf= entities1.getExtractRequestInfo();
-				jtableModel.setInfo(extractinf);*/
 				
 			}		
 			

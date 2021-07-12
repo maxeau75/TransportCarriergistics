@@ -1,5 +1,6 @@
 package entities;
 
+import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -8,24 +9,26 @@ import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 import dbconnection.SingletonConnection;
 
 public class EntityImplementation implements EntityInterface{
+	
 
 	@Override
-	public List<HeaderDetails> getHeaderDetailsByKeyword(String kw) {
+	public List<HeaderDetails> getHeaderDetails() {
 		List <HeaderDetails> headerdetails = new ArrayList<HeaderDetails>();
 		Connection conn=SingletonConnection.getConnection();
 		
 			try {
-				PreparedStatement ps= conn.prepareStatement("select * from HeaderDetails where DocTypeID like ? ");
-				ps.setString(1, "%"+kw+"%");
+				PreparedStatement ps= conn.prepareStatement("select * from HeaderDetails");
 				ResultSet rs= ps.executeQuery();
 				
 				while(rs.next())
 				{
 					HeaderDetails hd= new HeaderDetails();
+					hd.readData();
 					
 					hd.setSenderID(rs.getString("SenderID"));
 					hd.setReceiverID(rs.getString("ReceiverID"));
@@ -38,7 +41,7 @@ public class EntityImplementation implements EntityInterface{
 				ps.close(); 
 				conn.close();
 				
-			} catch (SQLException e) {
+			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		
@@ -56,7 +59,7 @@ public class EntityImplementation implements EntityInterface{
 				while(rs.next())
 					{
 						ExtractRequestInfo erif= new ExtractRequestInfo();
-						
+		
 						erif.setReason(rs.getString("Reason"));
 						erif.setDate(rs.getString("Date"));
 						 exreqinf.add(erif);
@@ -3302,12 +3305,12 @@ Connection conn=SingletonConnection.getConnection();
 		try {
 			PreparedStatement ps= conn.prepareStatement("insert into Shipments(createBy,createDate,updateBy,updateDate,InternalId,type)VALUES(?,?,?,?,?,?)");
 			
-			ps.setString(6, sh.getCreateBy());
-			ps.setString(5, sh.getCreateDate());
-			ps.setString(4, sh.getUpdateBy());
-			ps.setString(3, sh.getUpdateDate());
-			ps.setString(2, sh.getInternalId());
-			ps.setString(1, sh.getType());				
+			ps.setString(1, sh.getCreateBy());
+			ps.setString(2, sh.getCreateDate());
+			ps.setString(3, sh.getUpdateBy());
+			ps.setString(4, sh.getUpdateDate());
+			ps.setString(5, sh.getInternalId());
+			ps.setString(6, sh.getType());				
 			ps.executeUpdate();
 			
 			ps.close();
@@ -4033,20 +4036,20 @@ Connection conn=SingletonConnection.getConnection();
 			ps.setString(2, spsc.getSequenceNum());
 			ps.setString(3, spsc.getInternalId());
 			ps.setString(4, spsc.getType());
-			ps.setString(4, spsc.getDescription());
-			ps.setString(4, spsc.getEdiCode());
-			ps.setString(4, spsc.getAmount());
-			ps.setString(4, spsc.getRate());
-			ps.setString(4, spsc.getRateQualifier());
-			ps.setString(4, spsc.getQuantity());
-			ps.setString(4, spsc.getWeight());
-			ps.setString(4, spsc.getDimWeight());
-			ps.setString(4, spsc.getFreightClass());
-			ps.setString(4, spsc.getFakFreightClass());
-			ps.setString(4, spsc.getIsMin());
-			ps.setString(4, spsc.getIsMax());
-			ps.setString(4, spsc.getIsNontaxable());
-			ps.setString(4, spsc.getComments());
+			ps.setString(5, spsc.getDescription());
+			ps.setString(6, spsc.getEdiCode());
+			ps.setString(7, spsc.getAmount());
+			ps.setString(8, spsc.getRate());
+			ps.setString(9, spsc.getRateQualifier());
+			ps.setString(10, spsc.getQuantity());
+			ps.setString(11, spsc.getWeight());
+			ps.setString(12, spsc.getDimWeight());
+			ps.setString(13, spsc.getFreightClass());
+			ps.setString(14, spsc.getFakFreightClass());
+			ps.setString(15, spsc.getIsMin());
+			ps.setString(16, spsc.getIsMax());
+			ps.setString(17, spsc.getIsNontaxable());
+			ps.setString(18, spsc.getComments());
 			ps.executeUpdate();
 			
 			ps.close();
@@ -4098,6 +4101,9 @@ Connection conn=SingletonConnection.getConnection();
 Connection conn=SingletonConnection.getConnection();
 		
 		try {
+			
+			//Scanner input= new Scanner("C:\\Users\\maxea\\Documents\\workspace-sts-3.9.11.RELEASE\\TransportCarriergistics\\src\\entities\\ShipmentMargins.java");
+			
 			PreparedStatement ps= conn.prepareStatement("insert into ShipmentMargins(type,currencyCode,MarginRevenue,MarginCost,MarginValue)values(?,?,?,?,?)");
 					
 			ps.setString(1, sm.getType());
@@ -4106,7 +4112,7 @@ Connection conn=SingletonConnection.getConnection();
 			ps.setString(4, sm.getMarginCost());
 			ps.setString(5, sm.getMarginValue());
 			ps.executeUpdate();
-			
+					
 			ps.close();
 			conn.close();
 		} catch (Exception e) {
@@ -4114,5 +4120,7 @@ Connection conn=SingletonConnection.getConnection();
 		}		
 		
 	}
+		
+	}
 
-}
+	
