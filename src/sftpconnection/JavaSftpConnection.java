@@ -61,43 +61,42 @@ public class JavaSftpConnection {
 		
 		@SuppressWarnings("unchecked")
 		Vector<LsEntry> fileList =channelSftp.ls("/");
-		//if (fileList != null && !fileList.isEmpty())
-		//{
+		
 		for(int i=0; i<fileList.size(); i++)
 		{
 			ChannelSftp.LsEntry lsEntry = (ChannelSftp.LsEntry) fileList.get(i);
-			System.out.println(lsEntry.getFilename());
-			//channelSftp.copy(lsEntry.getFilename(),"inputFiles");
+			String filename=lsEntry.getFilename();
+			System.out.println(filename);
+			
 		
+			 File sourcePath = new File("C:\\Users\\maxea\\Documents\\workspace-sts-3.9.11.RELEASE\\TransportCarriergistics\\sftpFiles"); 
+			  File destinationPath = new File("C:\\Users\\maxea\\Documents\\workspace-sts-3.9.11.RELEASE\\TransportCarriergistics\\inputFiles\\sftpFiles");
+				  
+		  
+			  
+				  if(sourcePath!= null && !fileList.isEmpty()) {
+					
+					  // Traverse the file tree and copy each file/directory
+					 
+				  Files.copy(sourcePath.toPath(), destinationPath.toPath(),StandardCopyOption.REPLACE_EXISTING);
+				  System.out.println("File copied successfully");
+				  
+				  //delete the original file
+				  sourcePath.delete();
+		                   
+				  
+				  }
+				  
+				  else
+				  {
+					  System.out.println("File copy failed");
+				  }
+
 		
-		//}
 			
 		            
-			//channelSftp.get("/CarrierInv-Carriergistics*", "inputFiles/CarrierInv-Carriergistics");
 			
-			//channelSftp.get("/CarrierInv-Carriergistics", "inputFiles/CarrierInv-Carriergistics");
-			//Thread.sleep(10000);
-			
-					 if(fileList != null && !fileList.isEmpty())
-					{
-						
-						for(LsEntry files:fileList) {
-							String fileNameToget= files.getFilename();
-							
-						if(fileNameToget.contains("Transport-Carriergistics") || fileNameToget.contains("CustomerInv-Carriergistics") || fileNameToget.contains("CarrierInv-Carriergistics"))
-						{
-							continue;
-							
-						}
-						
-						
-						
-						}
-						
-					}
-						 
-				
-
+		//Thread.sleep(10000);
 		//String newpath;
 		//String oldpath;
 		//channelsftp.rename(oldpath="inboundFiles/newFile.txt", newpath="inboundFiles/newFile2.txt");

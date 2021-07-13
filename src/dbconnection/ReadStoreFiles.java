@@ -35,7 +35,7 @@ public class ReadStoreFiles {
 	public static void main(String[] args) throws SQLException, IOException {
 		
 		String SQL="INSERT INTO StoreXmlFileTable(File_Name,File_Size,File_Extension,File_Content)VALUES(?,?,?,?)";
-		Path dir = Paths.get("inputFiles");
+		Path dir = Paths.get("sftpFiles");
 		
 			 
 			 try
@@ -48,13 +48,7 @@ public class ReadStoreFiles {
 			  List<Path> pathList = list.collect(Collectors.toList());
 			  System.out.println("Following files are saved in database.. ");
 			  
-			Thread.sleep(10000);
-			  
-			
-			  /*try { Files.walk(Paths.get("inputFiles")).filter(Files::isRegularFile)
-			  .map(Path::toFile).forEach(File::delete); } catch(FileNotFoundException e) {
-			  }
-			  System.out.println("Files deleted successfully");*/
+			//Thread.sleep(10000);
 			  
 			  for(Path path: pathList)
 			  {
@@ -73,8 +67,8 @@ public class ReadStoreFiles {
 				  ps.addBatch();
 			  }
 			  
-			  	ps.close(); 
-				conn.close();
+			  	//ps.close(); 
+				//conn.close();
 			  
 			  System.out.println("-----------------------------------");
 			  int[] executeBatch = ps.executeBatch();
@@ -92,12 +86,6 @@ public class ReadStoreFiles {
 			  
 			  //ps.close(); 
 			  //conn.close();
-			  
-			  
-			/*
-			 * Files.walk(Paths.get("inputFiles")) .filter(Files::isRegularFile)
-			 * .map(Path::toFile) .forEach(File::delete);
-			 */
 			  
 			  
 		
@@ -168,34 +156,6 @@ public class ReadStoreFiles {
 	System.out.println(e);
 	 }
 			 
-			
-  
-  //try { Files.walk(Paths.get("inputFiles")) .filter(Files::isRegularFile)
-  //.map(Path::toFile) .forEach(File::delete); }
-  
-  //catch(Exception e) { e.getStackTrace();
- // System.out.println("No such files/directory exits");
-  //}
-// }
-		/*
-		 * try { Files.walk(Paths.get("inputFiles")) .filter(Files::isRegularFile)
-		 * .map(Path::toFile) .forEach(File::delete); }
-		 * 
-		 * catch(Exception e) { e.getStackTrace();
-		 * System.out.println("No such files/directory exits"); }
-		 */
-		 
-	
-
-
-	  try { Files.walk(Paths.get("inputFiles")).filter(Files::isRegularFile)
-		  .map(Path::toFile).forEach(File::delete); } catch(FileNotFoundException e) {
-		  }
-		  System.out.println("Files deleted successfully");
-		  }
-
-	  
-
-  
+	} 
 
 }

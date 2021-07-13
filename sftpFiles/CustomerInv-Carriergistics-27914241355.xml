@@ -1,0 +1,623 @@
+<?xml version="1.0"?>
+<MercuryGate specVersion="3.31">
+<Header><SenderID/>
+<ReceiverID/>
+<DocTypeID>FreightBill</DocTypeID>
+<DocCount>1</DocCount>
+<Date type="generation">02/09/2021 17:27</Date>
+<ExtractRequest><Date>02/09/2021 17:27</Date>
+<Reason>Manual Extract From FreightBill List Screen</Reason>
+<User UserId="mike.robakezv" FirstName="Mike" LastName="Robak" internalId="27780252157"><ContactMethods><ContactMethod sequenceNum="1" type="Phone"></ContactMethod>
+<ContactMethod sequenceNum="2" type="Email">mike.robak@carriergistics.com</ContactMethod>
+<ContactMethod sequenceNum="3" type="SMSEmail"></ContactMethod>
+<ContactMethod sequenceNum="4" type="Fax"></ContactMethod>
+</ContactMethods>
+</User>
+</ExtractRequest>
+</Header>
+<MasterBillOfLading internalId="27855578995" type="CustomerLoad" createBy="mike.robakezv" createDate="01/12/2021 15:14" updateBy="mike.robakezv" updateDate="01/20/2021 14:28"><HandlingUnits>0.0</HandlingUnits>
+<ReferenceNumbers><ReferenceNumber type="Shipping Order" isPrimary="true" internalId="27855579031">SO24</ReferenceNumber>
+<ReferenceNumber type="Shipment ID" isPrimary="false" internalId="27855580248">SN26</ReferenceNumber>
+<ReferenceNumber type="Cross Border" isPrimary="false" internalId="27855580457">true</ReferenceNumber>
+<ReferenceNumber type="Carrier Mode" isPrimary="false" internalId="27855810007">TL</ReferenceNumber>
+<ReferenceNumber type="CustInvCreate" isPrimary="false" internalId="27869704714">CarInvApr</ReferenceNumber>
+<ReferenceNumber type="Customer Acct Number" isPrimary="false" internalId="27778624343">CarezVAdm</ReferenceNumber>
+</ReferenceNumbers>
+<RelatedExecutionLoads><MasterBillOfLading internalId="27855578937"/>
+</RelatedExecutionLoads>
+<Comments/>
+<Services/>
+<EquipmentList></EquipmentList>
+<ScheduledEquipment></ScheduledEquipment>
+<Payment><Method>Prepaid</Method>
+<BillTo><Address type="Bill To" isResidential="false" isPrimary="false" internalId="27855580025"><Owner>Carriergistics ezVision Admin</Owner>
+<CustomerAcctNum>CarezVAdm</CustomerAcctNum>
+<LocationCode>LOC49</LocationCode>
+<Name>Lear</Name>
+<AddrLine1>21557 Telegraph Rd</AddrLine1>
+<AddrLine2/>
+<City>Southfield</City>
+<StateProvince>MI</StateProvince>
+<PostalCode>48033</PostalCode>
+<CountryCode>US</CountryCode>
+<GeoLoc latDegrees="42472301" latDirection="N" longDegrees="83293998" longDirection="W"></GeoLoc>
+<Contacts><Contact/>
+</Contacts>
+<Comments/>
+</Address>
+</BillTo>
+</Payment>
+<PODReceived>false</PODReceived>
+<ProofOfPickupReceived>false</ProofOfPickupReceived>
+<RelatedParties></RelatedParties>
+<Status>Delivered</Status>
+<AssignedTo/>
+<Owner>Carriergistics ezVision Admin</Owner>
+<Audits></Audits>
+<Carriers></Carriers>
+<TerminalInfo type="Carrier"><Origin></Origin>
+<Destination></Destination>
+</TerminalInfo>
+<TerminalInfo type="Customer"><Origin></Origin>
+<Destination></Destination>
+</TerminalInfo>
+<Dates><Pickup><Date type="earliest">01/11/2021 08:00</Date>
+<Date type="latest">01/11/2021 08:00</Date>
+<Date type="planned">01/11/2021 08:00</Date>
+<Date type="actual">01/11/2021 09:00</Date>
+</Pickup>
+<Drop><Date type="earliest">01/12/2021 17:00</Date>
+<Date type="latest">01/12/2021 17:00</Date>
+<Date type="planned">01/12/2021 17:00</Date>
+<Date type="actual">01/12/2021 16:30</Date>
+</Drop>
+</Dates>
+<Plan><Events count="2"><Event type="Pickup" sequenceNum="1" internalId="27855579226"><CarrierActionCode/>
+<Dates><Date type="earliest">01/11/2021 08:00</Date>
+<Date type="latest">01/11/2021 08:00</Date>
+<Date type="planned">01/11/2021 08:00</Date>
+<Date type="actual">01/11/2021 09:00</Date>
+</Dates>
+<LateReason/>
+<AppointmentType/>
+<Address type="ShipTo/From" isResidential="false" isPrimary="false" internalId="27855579082"><LocationCode>LOC29</LocationCode>
+<Name>3LC - Detroit (Universal Linc)</Name>
+<AddrLine1>29129 Ecorse Rd</AddrLine1>
+<AddrLine2/>
+<City>Romulus</City>
+<StateProvince>MI</StateProvince>
+<PostalCode>48174</PostalCode>
+<CountryCode>US</CountryCode>
+<GeoLoc latDegrees="42215213" latDirection="N" longDegrees="83344726" longDirection="W"></GeoLoc>
+<Contacts><Contact/>
+</Contacts>
+<Comments/>
+</Address>
+<Weight type="firstAvail" uom="lb">15000.0</Weight>
+<Shipments><ReferenceNumbers><ReferenceNumber type="Shipment ID" isPrimary="true" internalId="27855578295">SN26</ReferenceNumber>
+</ReferenceNumbers>
+</Shipments>
+<Activities></Activities>
+</Event>
+<Event type="Drop" sequenceNum="2" internalId="27855579620"><CarrierActionCode/>
+<Dates><Date type="earliest">01/12/2021 17:00</Date>
+<Date type="latest">01/12/2021 17:00</Date>
+<Date type="planned">01/12/2021 17:00</Date>
+<Date type="actual">01/12/2021 16:30</Date>
+</Dates>
+<LateReason/>
+<AppointmentType/>
+<Address type="ShipTo/From" isResidential="false" isPrimary="false" internalId="27855579495"><LocationCode>LOC30</LocationCode>
+<Name>Lear Ajax</Name>
+<AddrLine1>660 Monarch Ave</AddrLine1>
+<AddrLine2/>
+<City>Ajax</City>
+<StateProvince>ON</StateProvince>
+<PostalCode>L1S 2G9</PostalCode>
+<CountryCode>CA</CountryCode>
+<GeoLoc latDegrees="43833652" latDirection="N" longDegrees="79020874" longDirection="W"></GeoLoc>
+<Contacts><Contact/>
+</Contacts>
+<Comments/>
+</Address>
+<Weight type="firstAvail" uom="lb">15000.0</Weight>
+<Shipments><ReferenceNumbers><ReferenceNumber type="Shipment ID" isPrimary="true" internalId="27855578295">SN26</ReferenceNumber>
+</ReferenceNumbers>
+</Shipments>
+<Activities></Activities>
+</Event>
+</Events>
+</Plan>
+<Shipments><Shipment internalId="27855578276" type="Regular" createBy="mike.robakezv" createDate="01/12/2021 15:14" updateBy="mike.robakezv" updateDate="01/20/2021 14:29"><ReferenceNumbers><ReferenceNumber type="Shipment ID" isPrimary="true" internalId="27855578295">SN26</ReferenceNumber>
+<ReferenceNumber type="Shipping Order" isPrimary="false" internalId="27855580270">SO24</ReferenceNumber>
+<ReferenceNumber type="Cross Border" isPrimary="false" internalId="27855580470">true</ReferenceNumber>
+<ReferenceNumber type="Load ID" isPrimary="false" internalId="27855580737">LD26</ReferenceNumber>
+<ReferenceNumber type="PRO" isPrimary="false" internalId="27855580777">LD26</ReferenceNumber>
+<ReferenceNumber type="PRO" isPrimary="false" internalId="27857170307">10801</ReferenceNumber>
+<ReferenceNumber type="Customer Acct Number" isPrimary="false" internalId="27778624343">CarezVAdm</ReferenceNumber>
+</ReferenceNumbers>
+<Comments><Comment type="SpecialInstructions"></Comment>
+</Comments>
+<Status>Delivered</Status>
+<AssignedTo/>
+<Owner>Carriergistics ezVision Admin</Owner>
+<Audits><Audit timestamp="" user="mike.robakezv" action="Tendered"/></Audits>
+<QuoteDetail><QuotedTo/>
+<QuotePhone/>
+<QuoteFax/>
+<QuoteEmail/>
+<QuoteDate/>
+<QuoteBy>mike.robakezv</QuoteBy>
+</QuoteDetail>
+<Carriers></Carriers>
+<TerminalInfo type="Carrier"><Origin></Origin>
+<Destination></Destination>
+</TerminalInfo>
+<TerminalInfo type="Customer"><Origin></Origin>
+<Destination></Destination>
+</TerminalInfo>
+<EquipmentList></EquipmentList>
+<ScheduledEquipment></ScheduledEquipment>
+<Quantities><Quantity type="package" uom="PLT">20.0</Quantity>
+</Quantities>
+<Weights><Weight type="actual" uom="lb">15000.0</Weight>
+<Weight type="planned" uom="lb">15000.0</Weight>
+<Weight type="ordered" uom="lb">0.0</Weight>
+<Weight type="delivered" uom="lb">0.0</Weight>
+</Weights>
+<Dimensions><Dimension type="" dim="LinearFeet" uom="ft">0.0</Dimension>
+<Dimension type="" dim="RatingCount" uom="ct">0.0</Dimension>
+</Dimensions>
+<Dates><Pickup><Date type="earliest">01/11/2021 08:00</Date>
+<Date type="latest">01/11/2021 08:00</Date>
+<Date type="actual">01/11/2021 09:00</Date>
+</Pickup>
+<Drop><Date type="earliest">01/12/2021 17:00</Date>
+<Date type="latest">01/12/2021 17:00</Date>
+<Date type="actual">01/12/2021 16:30</Date>
+</Drop>
+</Dates>
+<Shipper><Address type="ShipTo/From" isResidential="false" isPrimary="false" internalId="27855578364"><LocationCode>LOC29</LocationCode>
+<Name>3LC - Detroit (Universal Linc)</Name>
+<AddrLine1>29129 Ecorse Rd</AddrLine1>
+<AddrLine2/>
+<City>Romulus</City>
+<StateProvince>MI</StateProvince>
+<PostalCode>48174</PostalCode>
+<CountryCode>US</CountryCode>
+<GeoLoc latDegrees="42215213" latDirection="N" longDegrees="83344726" longDirection="W"></GeoLoc>
+<Contacts><Contact/>
+</Contacts>
+<Comments/>
+</Address>
+</Shipper>
+<Consignee><Address type="ShipTo/From" isResidential="false" isPrimary="false" internalId="27855578526"><LocationCode>LOC30</LocationCode>
+<Name>Lear Ajax</Name>
+<AddrLine1>660 Monarch Ave</AddrLine1>
+<AddrLine2/>
+<City>Ajax</City>
+<StateProvince>ON</StateProvince>
+<PostalCode>L1S 2G9</PostalCode>
+<CountryCode>CA</CountryCode>
+<GeoLoc latDegrees="43833652" latDirection="N" longDegrees="79020874" longDirection="W"></GeoLoc>
+<Contacts><Contact/>
+</Contacts>
+<Comments/>
+</Address>
+</Consignee>
+<Services/>
+<Packages><Package type="" internalId="27855578868"><Dimensions><Dimension type="" dim="Width" uom=" ">0.0</Dimension>
+<Dimension type="" dim="Length" uom=" ">0.0</Dimension>
+<Dimension type="" dim="Height" uom=" ">0.0</Dimension>
+</Dimensions>
+<Weights><Weight type="actual" uom="lb">15000.0</Weight>
+<Weight type="planned" uom="lb">15000.0</Weight>
+<Weight type="ordered" uom="lb">0.0</Weight>
+<Weight type="delivered" uom="lb">0.0</Weight>
+</Weights>
+<ItemGroups><ItemGroup internalId="27855578868" isShipUnit="false" isHandlingUnit="true" sequence="1"><Description>Test Item</Description>
+<ContainmentId>0</ContainmentId>
+<Weights><Weight type="actual" uom="lb">15000.0</Weight>
+<Weight type="planned" uom="lb">15000.0</Weight>
+<Weight type="ordered" uom="lb">0.0</Weight>
+<Weight type="delivered" uom="lb">0.0</Weight>
+</Weights>
+<Quantities><Quantity type="actual" uom="PLT">20.0</Quantity>
+<Quantity type="planned" uom="PLT">20.0</Quantity>
+<Quantity type="ordered" uom="">0.0</Quantity>
+<Quantity type="delivered" uom="">0.0</Quantity>
+</Quantities>
+<Dimensions><Dimension type="actual" dim="Width" uom="in">0.0</Dimension>
+<Dimension type="actual" dim="Length" uom="in">0.0</Dimension>
+<Dimension type="actual" dim="Height" uom="in">0.0</Dimension>
+<Dimension type="planned" dim="Width" uom="in">0.0</Dimension>
+<Dimension type="planned" dim="Length" uom="in">0.0</Dimension>
+<Dimension type="planned" dim="Height" uom="in">0.0</Dimension>
+</Dimensions>
+<FreightClass type="delivered">0.0</FreightClass>
+<Stackability>0</Stackability>
+<TrackingNumber/>
+<DeliveryStatus/>
+<EquipmentRequired>false</EquipmentRequired>
+<ReferenceNumbers><ReferenceNumber type="RESTUniqueId" isPrimary="false" internalId="27855578875">ksQzuTH9ND</ReferenceNumber>
+<ReferenceNumber type="RESTNestedInUniqueId" isPrimary="false" internalId="27855578878">BjkgtUUz0h</ReferenceNumber>
+</ReferenceNumbers>
+<LineItem lineNumber="1" internalId="27855578863"><Weights><Weight type="ordered" uom="lb">0.0</Weight>
+</Weights>
+<Quantities><Quantity type="ordered" uom="">0.0</Quantity>
+</Quantities>
+<ItemId>12345</ItemId>
+<Description>Test Item</Description>
+<FreightClass>65.0</FreightClass>
+<Commodity>General:General</Commodity>
+<NmfcCode/>
+<StccCode/>
+<CustomerPartNum/>
+<ManufacturerPartNum/>
+<DistributorPartNum/>
+<Cube uom="cbf">0</Cube>
+<TemperatureRange/>
+<HazardousMaterial>false</HazardousMaterial>
+<HazMatDetail internalId=""><ProperShippingName/>
+<HazMatID/>
+<PackageGroup/>
+<HazMatClass/>
+<ContactName/>
+<ContactPhone/>
+<HazMatPlacards>false</HazMatPlacards>
+<HazMatPlacardsDetails/>
+<HazMatEMSNumber/>
+<HazMatFlashPointTemp/>
+<Comments/>
+</HazMatDetail>
+<Dimensions><Dimension type="ordered" dim="Width" uom="in">0.0</Dimension>
+<Dimension type="ordered" dim="Length" uom="in">0.0</Dimension>
+<Dimension type="ordered" dim="Height" uom="in">0.0</Dimension>
+</Dimensions>
+<HarmonizedTariffCode/>
+<PortOfLading/>
+<CountryOfOrigin/>
+<CountryOfManufacture/>
+<CustomsValue/>
+<CustomsValueCurrency/>
+<InsuredValue/>
+<InsuredValueCurrency/>
+<AESExportCode/>
+<ScheduleBNumber/>
+<Domestic>D</Domestic>
+<ECCN/>
+<OriginationCountry/>
+<ManufacturingCountry/>
+<LicenseNumber/>
+<LicenseType/>
+<ReferenceNumbers></ReferenceNumbers>
+</LineItem>
+</ItemGroup>
+</ItemGroups>
+</Package>
+</Packages>
+<Payment><Method>Prepaid</Method>
+<BillTo thirdParty="true"><Address type="Bill To" isResidential="false" isPrimary="false" internalId="27855578683"><Owner>Carriergistics ezVision Admin</Owner>
+<CustomerAcctNum>CarezVAdm</CustomerAcctNum>
+<LocationCode>LOC49</LocationCode>
+<Name>Lear</Name>
+<AddrLine1>21557 Telegraph Rd</AddrLine1>
+<AddrLine2/>
+<City>Southfield</City>
+<StateProvince>MI</StateProvince>
+<PostalCode>48033</PostalCode>
+<CountryCode>US</CountryCode>
+<GeoLoc latDegrees="42472301" latDirection="N" longDegrees="83293998" longDirection="W"></GeoLoc>
+<Contacts><Contact/>
+</Contacts>
+<Comments/>
+</Address>
+</BillTo>
+</Payment>
+<PODReceived>true</PODReceived>
+<RelatedParties></RelatedParties>
+<LateReason code="AF">Accident</LateReason>
+<OriginalSource/>
+<Activities><Activity type="Create Execution Load" createDate="01/12/2021 15:14" createBy="mike.robakezv" updateDate="01/12/2021 15:14" updateBy="mike.robakezv" internalId="27855580497"><ActivityID/>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Complete</Status>
+<AssignedTo/>
+<PlannedDate>01/12/2021 15:14</PlannedDate>
+<PercentageComplete/>
+<CompletedDate>01/12/2021 15:14</CompletedDate>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+</Activities>
+<Links></Links>
+</Shipment>
+</Shipments>
+<Weights><Weight type="actual" uom="lb">15000.0</Weight>
+<Weight type="planned" uom="lb">15000.0</Weight>
+<Weight type="ordered" uom="lb">0.0</Weight>
+<Weight type="delivered" uom="lb">0.0</Weight>
+</Weights>
+<Dimensions><Dimension type="" dim="LinearFeet" uom="ft">0.0</Dimension>
+<Dimension type="" dim="RatingCount" uom="ct">0.0</Dimension>
+</Dimensions>
+<Quantities><Quantity type="actual">20.0</Quantity>
+<Quantity type="planned">20.0</Quantity>
+<Quantity type="ordered">0.0</Quantity>
+<Quantity type="delivered">0.0</Quantity>
+</Quantities>
+<PriceSheets><PriceSheet type="Cost" chargeModel="NORMALIZED_NON_SMC" isSelected="true" isAllocated="false" currencyCode="USD" createDate="01/12/2021 17:31" updateDate="01/12/2021 17:31" internalId="27855809893" exchangeDate="" createBy="mike.robakezv" updateBy="mike.robakezv"><AccessorialTotal>61.82</AccessorialTotal>
+<SubTotal>658.58</SubTotal>
+<Total>720.40</Total>
+<NormalizedTotal currencyCode="USD">720.40</NormalizedTotal>
+<ContractId>(27787077414,3023,0)</ContractId>
+<ContractName>Lear Customer Contract</ContractName>
+<Carrier internalId="27816941240"><CarrierId>(27816941240,3840,0)</CarrierId>
+<CarrierName>Federated Logistics</CarrierName>
+<SCAC>FLOG</SCAC>
+<Mode>TL</Mode>
+<Service/>
+<ServiceDays>1.0</ServiceDays>
+<Distance>294.37</Distance>
+<Id>FLOG</Id>
+<MCNumber/>
+<USDOT/>
+<InsuranceTypes><Insurance type="Cargo" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+<Insurance type="General" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+<Insurance type="Liability" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+</InsuranceTypes>
+</Carrier>
+<ReasonCode/>
+<Status/>
+<LaneID>Romulus,MI to Ajax,ON</LaneID>
+<Zone/>
+<RouteGuidePriority/>
+<CarrierLocationOid/>
+<OriginService/>
+<DestinationService/>
+<DimFactor>0.0</DimFactor>
+<DimWeight>0.0</DimWeight>
+<TotalWeight>15000.0</TotalWeight>
+<ChargeableWeight>15000.0</ChargeableWeight>
+<Charges><Charge sequenceNum="1" type="ITEM" itemGroupId="27855578868" internalId="27855809894"><Description>total weight and volume based</Description>
+<EdiCode/>
+<Amount>658.58</Amount>
+<Rate>658.58</Rate>
+<RateQualifier>FR</RateQualifier>
+<Quantity/>
+<Weight>15000.0</Weight>
+<DimWeight>0.0</DimWeight>
+<FreightClass>65.0</FreightClass>
+<FakFreightClass>0.0</FakFreightClass>
+<IsMin>false</IsMin>
+<IsMax>false</IsMax>
+<IsNontaxable>false</IsNontaxable>
+<ReferenceNumbers></ReferenceNumbers>
+</Charge>
+<Charge sequenceNum="2" type="ACCESSORIAL_FUEL" itemGroupId="" internalId="27855809895"><Description>Fuel Surcharge</Description>
+<EdiCode>FUE</EdiCode>
+<Amount>61.82</Amount>
+<Rate>0.21</Rate>
+<RateQualifier>PM</RateQualifier>
+<Quantity>294.3725</Quantity>
+<Weight>0.0</Weight>
+<DimWeight>0.0</DimWeight>
+<FreightClass>0.0</FreightClass>
+<FakFreightClass>0.0</FakFreightClass>
+<IsMin>false</IsMin>
+<IsMax>false</IsMax>
+<IsNontaxable>false</IsNontaxable>
+<ReferenceNumbers></ReferenceNumbers>
+</Charge>
+</Charges>
+<Comments/>
+</PriceSheet>
+<PriceSheet type="Invoice" chargeModel="NORMALIZED_MANUAL" isSelected="true" isAllocated="false" currencyCode="USD" createDate="01/20/2021 14:28" updateDate="01/20/2021 14:28" internalId="27869704718" exchangeDate="01/20/2021 14:28" createBy="mike.robakezv" updateBy="mike.robakezv" internalIdInvoice="27869704733"><Consolidation count="0"></Consolidation>
+<Weight type="pricesheet" uom="lb">15000.0</Weight>
+<Settlement><Queue/>
+<Total>0.00</Total>
+<ReasonCode/>
+<InvoiceNumber/>
+<Date type="invoice">01/20/2021 00:00</Date>
+<PaymentMethod>Prepaid</PaymentMethod>
+<Comments/>
+<Check/>
+</Settlement>
+<RemitTo></RemitTo>
+<InvoiceBillTo/>
+<ReferenceNumbers></ReferenceNumbers>
+<ReferenceNumbers type="priceSheet"></ReferenceNumbers>
+<Audits><Audit timestamp="02/09/2021 17:27" user="" action="Extracted">AR10</Audit>
+</Audits>
+<Activities><Activity type="Approve Invoice" createDate="01/20/2021 14:28" createBy="mike.robakezv" updateDate="01/20/2021 14:28" updateBy="mike.robakezv" internalId="27869704735"><ActivityID/>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Complete</Status>
+<AssignedTo/>
+<PlannedDate>01/20/2021 14:28</PlannedDate>
+<PercentageComplete/>
+<CompletedDate>01/20/2021 14:28</CompletedDate>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+<Activity type="Ready to Extract" createDate="01/20/2021 14:28" createBy="mike.robakezv" updateDate="01/20/2021 14:28" updateBy="mike.robakezv" internalId="27869704737"><ActivityID/>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Pending</Status>
+<AssignedTo/>
+<PlannedDate>01/20/2021 14:28</PlannedDate>
+<PercentageComplete/>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+</Activities>
+<AccessorialTotal>61.82</AccessorialTotal>
+<SubTotal>658.58</SubTotal>
+<Total>720.40</Total>
+<NormalizedTotal currencyCode="USD">720.40</NormalizedTotal>
+<GLCode>HeaderRevenueGL</GLCode>
+<ContractId>(27787077414,3023,0)</ContractId>
+<ContractName>Lear Customer Contract</ContractName>
+<Carrier internalId="27817424204"><CarrierId>(27817424204,3840,0)</CarrierId>
+<CarrierName>Federated Logistics</CarrierName>
+<SCAC>FLOG</SCAC>
+<Mode>TL</Mode>
+<Service/>
+<ServiceDays>1.0</ServiceDays>
+<Distance>294.37</Distance>
+<Id>1002</Id>
+<MCNumber/>
+<USDOT/>
+<InsuranceTypes><Insurance type="Cargo" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+<Insurance type="General" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+<Insurance type="Liability" amount="0.00" company="" expirationDate="" contactName="" contactPhone=""/>
+</InsuranceTypes>
+<Address type="Carrier" isResidential="false" isPrimary="false" internalId="27855810841"><Owner>Carriergistics ezVision Admin</Owner>
+<CustomerAcctNum>CarezVAdm</CustomerAcctNum>
+<LocationCode>CL1001</LocationCode>
+<Name>Federated Main Office</Name>
+<AddrLine1>168 Test Location</AddrLine1>
+<AddrLine2/>
+<City>PITTSBURGH</City>
+<StateProvince>PA</StateProvince>
+<PostalCode>15201</PostalCode>
+<CountryCode>USA</CountryCode>
+<GeoLoc latDegrees="40466667" latDirection="N" longDegrees="79950000" longDirection="W"></GeoLoc>
+<Contacts><Contact type="Primary" oid="27904749389"><Name>Mike James</Name>
+<ContactMethods/>
+</Contact>
+</Contacts>
+<Comments/>
+</Address>
+</Carrier>
+<ReasonCode/>
+<Status/>
+<LaneID>Romulus,MI to Ajax,ON</LaneID>
+<Zone/>
+<RouteGuidePriority/>
+<CarrierLocationOid/>
+<OriginService/>
+<DestinationService/>
+<DimFactor>0.0</DimFactor>
+<DimWeight>0.0</DimWeight>
+<ChargeableWeight>15000.0</ChargeableWeight>
+<Charges><Charge sequenceNum="1" type="ITEM" itemGroupId="" internalId="27869704719"><Description>Total Line Haul Charge</Description>
+<EdiCode/>
+<Amount>658.58</Amount>
+<Rate>658.58</Rate>
+<RateQualifier>FR</RateQualifier>
+<Quantity/>
+<Weight>0.0</Weight>
+<DimWeight>0.0</DimWeight>
+<FreightClass>0.0</FreightClass>
+<FakFreightClass>0.0</FakFreightClass>
+<IsMin>false</IsMin>
+<IsMax>false</IsMax>
+<IsNontaxable>false</IsNontaxable>
+<GLCode>LinehaulRevenueGL</GLCode>
+<ReferenceNumbers></ReferenceNumbers>
+</Charge>
+<Charge sequenceNum="2" type="ACCESSORIAL_FUEL" itemGroupId="" internalId="27869704720"><Description>Fuel Surcharge</Description>
+<EdiCode>FUE</EdiCode>
+<Amount>61.82</Amount>
+<Rate>0.21</Rate>
+<RateQualifier>PM</RateQualifier>
+<Quantity>294.3725</Quantity>
+<Weight>0.0</Weight>
+<DimWeight>0.0</DimWeight>
+<FreightClass>0.0</FreightClass>
+<FakFreightClass>0.0</FakFreightClass>
+<IsMin>false</IsMin>
+<IsMax>false</IsMax>
+<IsNontaxable>false</IsNontaxable>
+<GLCode>FuelRevenueGL</GLCode>
+<ReferenceNumbers></ReferenceNumbers>
+</Charge>
+</Charges>
+<Comments/>
+</PriceSheet>
+</PriceSheets>
+<Tenders></Tenders>
+<Activities><Activity type="Assign Customer Rate" createDate="01/12/2021 15:14" createBy="mike.robakezv" updateDate="01/12/2021 17:31" updateBy="mike.robakezv" internalId="27855580425"><ActivityID/>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Complete</Status>
+<AssignedTo/>
+<PlannedDate>01/12/2021 17:14</PlannedDate>
+<PercentageComplete/>
+<CompletedDate>01/12/2021 17:31</CompletedDate>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+<Activity type="Create Execution Load" createDate="01/12/2021 15:14" createBy="mike.robakezv" updateDate="01/12/2021 15:14" updateBy="mike.robakezv" internalId="27855580483"><ActivityID/>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Complete</Status>
+<AssignedTo/>
+<PlannedDate>01/12/2021 15:14</PlannedDate>
+<PercentageComplete/>
+<CompletedDate>01/12/2021 15:14</CompletedDate>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+<Activity type="Accrue Charges" createDate="01/20/2021 14:18" createBy="mike.robakezv" updateDate="01/20/2021 14:18" updateBy="mike.robakezv" internalId="27869678027"><ActivityID/>
+<Summary/>
+<Priority/>
+<Required>false</Required>
+<Status>Pending</Status>
+<AssignedTo/>
+<PlannedDate>01/27/2021 14:18</PlannedDate>
+<PercentageComplete/>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+<Activity type="Add Customer Invoice" createDate="01/20/2021 14:28" createBy="mike.robakezv" updateDate="01/20/2021 14:28" updateBy="mike.robakezv" internalId="27869704717"><ActivityID>CarInvApr</ActivityID>
+<Summary/>
+<Priority>Normal</Priority>
+<Required>false</Required>
+<Status>Complete</Status>
+<AssignedTo/>
+<PlannedDate>01/20/2021 14:28</PlannedDate>
+<PercentageComplete/>
+<CompletedDate>01/20/2021 14:28</CompletedDate>
+<StatusDetails/>
+<Location/>
+<Contact/>
+<Documents/>
+</Activity>
+</Activities>
+<Links></Links>
+<Margins><Margin type="CurrentMargin" currencyCode="USD"><MarginRevenue>720.40</MarginRevenue>
+<MarginCost>438.62</MarginCost>
+<MarginValue>281.78</MarginValue>
+</Margin>
+<Margin type="InvoiceMargin" currencyCode="USD"><MarginRevenue>0.00</MarginRevenue>
+<MarginCost>438.62</MarginCost>
+<MarginValue>-438.62</MarginValue>
+</Margin>
+<Margin type="RateMargin" currencyCode="USD"><MarginRevenue>720.40</MarginRevenue>
+<MarginCost>438.62</MarginCost>
+<MarginValue>281.78</MarginValue>
+</Margin>
+</Margins>
+<FinancialAllocations><Allocation type="Carrier Invoice" invoiceNumber="12345testinvoice" currencyCode="USD">438.62</Allocation>
+</FinancialAllocations>
+</MasterBillOfLading>
+</MercuryGate>
